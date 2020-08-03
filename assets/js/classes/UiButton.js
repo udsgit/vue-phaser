@@ -15,16 +15,17 @@ class UiButton extends Phaser.GameObjects.Container {
   }
   createButton() {
     // create play game button
-    this.button = this.scene.add.image(0, 0, "button1");
+    this.button = this.scene.add.image(this.x, this.y, "start");
     // make button interactive
     this.button.setInteractive();
     // scale the button
     this.button.setScale(1.4);
 
     // create the button text
-    this.buttonText = this.scene.add.text(0, 0, "Start", {
-      fontSize: "26px",
-      fill: "#fff",
+    this.buttonText = this.scene.add.text(this.x, this.y, "Start", {
+      fontFamily: "EightBitsOfDoom",
+      fontSize: "32px",
+      color: "#fff",
     });
 
     // center the button text inside the  Ui button

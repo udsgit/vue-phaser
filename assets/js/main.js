@@ -1,12 +1,12 @@
 var config = {
   type: Phaser.AUTO,
   width: 800,
-  height: 600,
+  height: 576,
   scene: [BootScene, TitleScene, GameScene, UiScene],
   physics: {
     default: "arcade",
     arcade: {
-      debug: true,
+      debug: false,
       gravity: {
         x: 0,
       },

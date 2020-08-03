@@ -1,10 +1,10 @@
-# **Phaser 3 Introduction**
+# **Chest Collector**
 
 Just an introduction to the Game Framework "Phaser 3" 🕹️👾
 
 ## **Table of contents**
 
-- [**Phaser 3 Introduction**](#phaser-3-introduction)
+- [**Chest Collector**](#chest-collector)
   - [**Table of contents**](#table-of-contents)
   - [**General info**](#general-info)
   - [**Demo**](#demo)
@@ -24,7 +24,7 @@ It is simply a first contact to know the basic parts of the framework "Phaser 3"
 
 ## **Demo**
 
-//You can try it downloading the [**Apk**](https://github.com/udsgit/tic-tac-toe/raw/master/apk/tic-tac-toe.apk).
+You can try it using the [Demo](https://udsgit.github.io/chest-collector)
 
 > <img src="images/demo.gif" width="300"/><br> 
 > <i>Demo</i>

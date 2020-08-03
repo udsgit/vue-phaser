@@ -4,22 +4,31 @@ class BootScene extends Phaser.Scene {
   }
 
   preload() {
+    this.loadFonts();
     this.loadImages();
     this.loadSpriteSheets();
     this.loadAudio();
   }
 
+  loadFonts() {
+    this.load.bitmapFont("EightBitsOfDoom", "assets/fonts/8bits.fnt");
+  }
+
   loadImages() {
-    this.load.image("button1", "assets/images/ui/blue_button01.png");
-    this.load.image("button2", "assets/images/ui/blue_button02.png");
+    this.load.image("start", "assets/images/ui/start.png");
+    this.load.image("startHold", "assets/images/ui/start-hold.png");
+    this.load.image("move", "assets/images/ui/move.png");
+    this.load.image("run", "assets/images/ui/run.png");
+    this.load.image("character", "assets/images/character.png");
+    this.load.image("background", "assets/images/background.png");
+  }
+
+  loadSpriteSheets() {
     this.load.spritesheet("items", "assets/images/items.png", {
       frameWidth: 32,
       frameHeight: 32,
     });
-  }
-
-  loadSpriteSheets() {
-    this.load.spritesheet("characters", "assets/images/characters.png", {
+    this.load.spritesheet("walls", "assets/images/walls.png", {
       frameWidth: 32,
       frameHeight: 32,
     });
