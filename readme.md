@@ -26,14 +26,14 @@ It is simply a first contact to know the basic parts of the framework "Phaser 3"
 
 You can try it using the [Demo](https://udsgit.github.io/chest-collector)
 
-> <img src="images/demo.gif" width="300"/><br> 
+> <img src="assets/images/readme/demo.gif" width="300"/><br> 
 > <i>Demo</i>
 
 ## **Screenshots**
 
-> <img src="images/home.jpg" width="300"/>
-> <img src="images/levels.jpg" width="300"/><br>
-> <i>Menu and Difficulty screen</i>
+> <img src="assets/images/readme/title.jpg" width="300"/>
+> <img src="assets/images/readme/game.jpg" width="300"/><br>
+> <i>title screen and game screen</i>
 
 ## **Technologies**
 
@@ -45,12 +45,12 @@ You can try it using the [Demo](https://udsgit.github.io/chest-collector)
 It has no installation, you just need to clone or download the repository.
 
 ```console
-git clone https://github.com/udsgit/tic-tac-toe.git
+git clone https://github.com/udsgit/chest-collector.git
 ```
 
 ## **Usage**
 
-1. Open the link from the [Demo](https://udsgit.github.io/e-home) or open the file **index.html** if you downloaded it.
+1. Open the link from the [Demo](https://udsgit.github.io/chest-collector) or open the file **index.html** if you downloaded it.
 2. Now you can interact with the "Game".
 3. To move, you will use the arrows on the keyboard and you can take the chests that will appear. The game only consists of that, since it is a first contact.
 
@@ -58,7 +58,7 @@ git clone https://github.com/udsgit/tic-tac-toe.git
 
 Project is: **_Completed._**
 
-Since it has served to know the first contact, but it will continue to be improved through new repositories.
+Since it has served to know the first contact, but it will continue to be improved through new commits or new repositories making other games.
 
 ## **Contact**
 
