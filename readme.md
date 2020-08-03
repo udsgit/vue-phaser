@@ -17,7 +17,7 @@ Just an introduction to the Game Framework "Phaser 3" 🕹️👾
 
 ## **General info**
 
-**Date**: July, 2019  
+**Date**: July, 2020  
 **Duration**: 2 Days.
 
 It is simply a first contact to know the basic parts of the framework "Phaser 3" 🕹️👾.
