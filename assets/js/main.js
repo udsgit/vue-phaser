@@ -1,7 +1,19 @@
-var config = {
+let config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 576,
+  scale: {
+    mode: Phaser.Scale.RESIZE,
+    parent: 'phaser-example',
+    width: '100%',
+    height: '100%',
+    min: {
+      width: 640,
+      height: 400
+    },
+    max: {
+      width: 2560,
+      height: 400
+    }
+  },
   scene: [BootScene, TitleScene, GameScene, UiScene],
   physics: {
     default: "arcade",
@@ -14,4 +26,4 @@ var config = {
   },
 };
 
-var game = new Phaser.Game(config);
+let game = new Phaser.Game(config);

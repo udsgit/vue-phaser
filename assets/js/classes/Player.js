@@ -10,6 +10,11 @@ class Player extends Phaser.Physics.Arcade.Image {
     this.scene.add.existing(this); // add the player to our existing scene
   }
 
+  update(x, y){
+    this.body.setVelocity(0);
+
+  }
+
   update(cursors) {
     this.body.setVelocity(0);
 
