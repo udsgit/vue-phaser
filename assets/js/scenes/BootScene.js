@@ -24,6 +24,9 @@ class BootScene extends Phaser.Scene {
   }
 
   loadSpriteSheets() {
+    this.load.atlas("corners", "assets/images/terrain/terrain_corner.png", "assets/images/terrain/terrain_corner.json")
+
+
     this.load.spritesheet("items", "assets/images/items.png", {
       frameWidth: 32,
       frameHeight: 32,

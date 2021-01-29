@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d118625-b4ee-4bb6-9979-1431dcd11c56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/js/classes/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/classes/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scenes/BootScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scenes/BootScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/scenes/GameScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scenes/GameScene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +32,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/terrain" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\uDsWe\WebstormProjects\chest-collector\assets\images\terrain" />
+      <recent name="C:\Users\uDsWe\WebstormProjects\chest-collector\assets\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="a7109d5a-d7f6-436d-9631-fb66fb78358e" uri="http://localhost:63342/chest-collector/index.html" useBuiltInWebServerPort="true">
@@ -55,11 +62,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611693421369</updated>
-      <workItem from="1611693423165" duration="8214000" />
+      <workItem from="1611693423165" duration="9000000" />
+      <workItem from="1611778685017" duration="646000" />
+      <workItem from="1611785098608" duration="1130000" />
+      <workItem from="1611794009417" duration="4923000" />
+      <workItem from="1611869122823" duration="15452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

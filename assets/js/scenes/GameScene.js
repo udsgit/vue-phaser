@@ -16,6 +16,7 @@ class GameScene extends Phaser.Scene {
         this.createPlayer();
         this.addCollisions();
         this.createInput();
+
     }
 
     update() {
@@ -89,54 +90,100 @@ class GameScene extends Phaser.Scene {
 
     createWalls() {
         this.walls = this.physics.add.staticGroup();
+        this.corners = this.physics.add.staticGroup();
+        this.grass = this.physics.add.staticGroup();
         this.wallPositions = [];
 
-        //x this.cameras.main.centerX * 2
-        //y this.cameras.main.centerY * 2
-        let BLOCK_SIZE = 32
-        let HALF_BLOCK = BLOCK_SIZE / 2;
         let MAX_X = this.cameras.main.centerX * 2;
         let MAX_Y = this.cameras.main.centerY * 2;
 
-        let MAX_BLOCKS_X = (MAX_X - HALF_BLOCK) / 32 + 1;
-        let MAX_BLOCKS_Y = (MAX_Y - HALF_BLOCK) / 32 + 1;
 
-
-        const frame = Math.floor(Math.random() * 4);
-
-        let x = -16;
-        let y = 16;
-        for (let i = 0; i < MAX_BLOCKS_X; i++) {
-            this.walls.create(x, y, "walls", frame);
-            this.walls.create(x, MAX_Y - 16, "walls", frame);
-            x += BLOCK_SIZE;
-        }
-
-        x = 16;
-        y = 16;
-        for (let i = 0; i < MAX_BLOCKS_Y; i++) {
-            this.walls.create(x, y, "walls", frame);
-            this.walls.create(MAX_X, y - 16, "walls", frame);
-            y += BLOCK_SIZE;
+        //100% grass center
+        for(let x = 0; x < MAX_X; x+=16){
+            for(let y = 0; y < MAX_Y; y+=16){
+                this.grass.create(x,y, "corners", "terrain_grass_center.png");
+            }
         }
 
 
-        let NW = {x: 0 + HALF_BLOCK, y: 0 + HALF_BLOCK};
-        let NE = {x: MAX_X - HALF_BLOCK, y: 0 + HALF_BLOCK};
-        let SE = {x: MAX_X - HALF_BLOCK, y: MAX_Y - HALF_BLOCK};
-        let SW = {x: 0 + HALF_BLOCK, y: MAX_Y - HALF_BLOCK};
+        let px = 32;
+
+        //corner west and east
+        while (px < MAX_Y - 64) {
+            this.corners.create(0, px, "corners", "terrain_corner_west_f1.png");
+            this.corners.create(MAX_X, px, "corners", "terrain_corner_east_f1.png");
+
+            px += 48;
+        }
+
+        px = 48;
+
+        //corner north and south
+        while (px < MAX_X - 32) {
+            this.corners.create(px, 0, "corners", "terrain_corner_north_f1.png");
+            this.corners.create(px, MAX_Y, "corners", "terrain_corner_south_f1.png");
+            px += 48;
+        }
+
+        //corner north west
+        this.corners.create(0, 0, "corners", "terrain_corner_north_west_f1.png");
+        this.corners.create(32, 0, "corners", "terrain_corner_north_west_right_f1.png");
+        this.grass.create(32,16, "corners", "terrain_grass_north_west_f1.png");
+
+        //corner north east
+        this.corners.create(MAX_X, 0, "corners", "terrain_corner_north_east_f1.png");
+        this.corners.create(MAX_X - 32, 0, "corners", "terrain_corner_north_east_left_f1.png");
+        this.grass.create(MAX_X - 32, 16, "corners", "terrain_grass_north_east_f1.png");
+
+        //corner south west
+        this.corners.create(0, MAX_Y, "corners", "terrain_corner_south_west_f1.png");
+        this.corners.create(0, MAX_Y - 32, "corners", "terrain_corner_south_west_up_f1.png");
+        this.corners.create(32, MAX_Y, "corners", "terrain_corner_south_west_right_f1.png");
+        this.grass.create(32, MAX_Y - 32, "corners", "terrain_grass_south_west_f1.png");
+
+        //corner south east
+        this.corners.create(MAX_X, MAX_Y, "corners", "terrain_corner_south_east_f1.png");
+        this.corners.create(MAX_X, MAX_Y - 32, "corners", "terrain_corner_south_east_up_f1.png");
+        this.corners.create(MAX_X - 32, MAX_Y, "corners", "terrain_corner_south_east_left_f1.png");
+        this.grass.create(MAX_X - 32, MAX_Y - 32, "corners", "terrain_grass_south_east_f1.png");
 
 
-        //this.walls.create(MAX_X - 16, MAX_Y - 16, "walls", frame);
-        // this.walls.create(NW.x,NW.y, "walls", frame);
-        // this.walls.create(NE.x,NE.y, "walls", frame);
-        // this.walls.create(SE.x,SE.y, "walls", frame);
-        // this.walls.create(SW.x,SW.y, "walls", frame);
+        // let terrain_corner_north = this.add.sprite(0,0, "corners", "terrain_corner_north_f1.png");
+        // let terrain_corner_west = this.add.sprite(0,0, "corners", "terrain_corner_west_f1.png");
+        // let terrain_corner_south = this.add.sprite(0,0, "corners", "terrain_corner_south_f1.png");
+        // let terrain_corner_east = this.add.sprite(0,0, "corners", "terrain_corner_east_f1.png");
 
-        this.wallPositions.push([MAX_X, MAX_Y]);
+        const terrains = [
+            "terrain_corner_north_west",
+            "terrain_corner_north",
+            "terrain_corner_north_east",
+            "terrain_corner_west",
+            "terrain_corner_south_west",
+            "terrain_corner_south",
+            "terrain_corner_south_east",
+            "terrain_corner_east"
+        ];
 
 
-        console.log(this.wallPositions);
+        terrains.forEach(terrain => {
+            this.createTerrainAnimations(terrain, 2, -1);
+        });
+
+
+    }
+
+    createTerrainAnimations(key, framerate, repeat) {
+        this.anims.create({
+            key: key,
+            frames: [
+                {key: "corners", frame: `${key}_f1.png`},
+                {key: "corners", frame: `${key}_f2.png`},
+                {key: "corners", frame: `${key}_f3.png`},
+                {key: "corners", frame: `${key}_f2.png`},
+            ],
+            frameRate: framerate,
+            repeat: repeat
+        })
     }
 
     createInput() {
@@ -144,7 +191,7 @@ class GameScene extends Phaser.Scene {
     }
 
     addCollisions() {
-        this.physics.add.collider(this.player, this.walls);
+        this.physics.add.collider(this.player, this.corners);
         this.physics.add.overlap(
             this.player,
             this.chests,
