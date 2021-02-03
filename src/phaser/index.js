@@ -20,7 +20,7 @@ export default function createMap(emit){
                 height: 400
             }
         },
-        scene: [BootScene, new MapScene(emit), UiScene],
+        scene: [BootScene, new MapScene(emit)],
         physics: {
             default: "arcade",
             arcade: {
@@ -29,8 +29,7 @@ export default function createMap(emit){
                     x: 0,
                 },
             },
-        },
+        }
     };
-
     return new Game(config);
 }

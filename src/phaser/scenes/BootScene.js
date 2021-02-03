@@ -1,4 +1,4 @@
-import {Scene} from 'phaser';
+import {Scene, Game} from 'phaser';
 import character from '@/assets/images/character.png'
 import background from "@/assets/images/background.png"
 import corners from "@/assets/images/terrain/terrain_corner.png"
