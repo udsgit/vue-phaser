@@ -12,10 +12,10 @@ export default class Sprite extends GameObjects.Sprite {
             {
                 key: this.name,
                 frames: [
-                    {key: "textures", frame: `${this.name}_f1.png`},
-                    {key: "textures", frame: `${this.name}_f2.png`},
-                    {key: "textures", frame: `${this.name}_f3.png`},
-                    {key: "textures", frame: `${this.name}_f2.png`},
+                    {key: "textures", frame: `${this.name}_f1`},
+                    {key: "textures", frame: `${this.name}_f2`},
+                    {key: "textures", frame: `${this.name}_f3`},
+                    {key: "textures", frame: `${this.name}_f2`},
                 ],
                 frameRate: frameRate,
                 repeat: repeat

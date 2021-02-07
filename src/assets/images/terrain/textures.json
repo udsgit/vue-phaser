@@ -4,913 +4,2323 @@
 			"image": "textures.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 256,
-				"h": 226
+				"w": 512,
+				"h": 2048
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "terrain_corner_east_f1.png",
+					"filename": "beach_corner_northeast_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_center_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_center_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 96,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 112,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_east_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 128,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_north_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 144,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_north_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 160,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northeast_edge_north_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 176,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_center_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 192,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_center_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 208,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_center_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 224,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_north_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 240,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_north_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 256,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_north_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 272,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 288,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 304,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 320,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 336,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 352,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_northwest_edge_west_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 368,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_center_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 384,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_center_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 400,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_center_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 416,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_east_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 432,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_east_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 448,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_east_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 464,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 480,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 496,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 512,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 528,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 544,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_east_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 560,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 576,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 592,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 608,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 624,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 640,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_edge_south_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 656,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_south_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 672,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_south_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 688,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southeast_south_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 704,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_center_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 720,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_center_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 736,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_center_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 752,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 768,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 784,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 800,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 816,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 832,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_south_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 848,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 864,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_first_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 880,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 896,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_second_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 912,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 928,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_edge_west_second_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 944,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_south_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 960,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_south_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 976,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_south_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 992,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_west_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 1008,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_west_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 1024,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_corner_southwest_west_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 1040,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_east_a_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 1,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1056,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_f1.png",
+					"filename": "beach_edge_east_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 51,
-						"w": 48,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1072,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_f2.png",
+					"filename": "beach_edge_east_a_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 35,
-						"y": 1,
-						"w": 48,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1088,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_east_f2.png",
+					"filename": "beach_edge_east_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 51,
-						"y": 35,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1104,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_east_f3.png",
+					"filename": "beach_edge_east_a_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 85,
-						"y": 1,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1120,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_west_f1.png",
+					"filename": "beach_edge_east_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 85,
-						"y": 51,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1136,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_west_f2.png",
+					"filename": "beach_edge_east_b_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 85,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1152,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_west_f3.png",
+					"filename": "beach_edge_east_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 48
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 35,
-						"y": 85,
-						"w": 32,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1168,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_f3.png",
+					"filename": "beach_edge_east_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 69,
-						"y": 101,
-						"w": 48,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1184,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_f1.png",
+					"filename": "beach_edge_east_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 135,
-						"w": 48,
+						"x": 0,
+						"y": 1200,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_east_b_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
 						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1216,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_f2.png",
+					"filename": "beach_edge_east_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 51,
-						"y": 135,
-						"w": 48,
+						"x": 0,
+						"y": 1232,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_north_a_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
 						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1248,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_f3.png",
+					"filename": "beach_edge_north_a_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 101,
-						"y": 135,
-						"w": 48,
+						"x": 0,
+						"y": 1264,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_north_a_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
 						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1280,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_f1.png",
+					"filename": "beach_edge_north_b_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 119,
-						"y": 1,
-						"w": 32,
-						"h": 32
+						"x": 0,
+						"y": 1296,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_north_b_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 1312,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_f2.png",
+					"filename": "beach_edge_north_b_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 119,
-						"y": 35,
-						"w": 32,
-						"h": 32
+						"x": 0,
+						"y": 1328,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_south_a_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1344,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_f3.png",
+					"filename": "beach_edge_south_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 119,
-						"y": 69,
-						"w": 32,
-						"h": 32
+						"x": 0,
+						"y": 1360,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_south_a_first_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1376,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_up_f1.png",
+					"filename": "beach_edge_south_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 119,
-						"y": 103,
-						"w": 32,
+						"x": 0,
+						"y": 1392,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_south_a_second_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
 						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 1408,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_f1.png",
+					"filename": "beach_edge_south_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 151,
-						"y": 121,
-						"w": 32,
-						"h": 32
+						"x": 0,
+						"y": 1424,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "beach_edge_south_b_first_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"frame": {
+						"x": 0,
+						"y": 1440,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_f2.png",
+					"filename": "beach_edge_south_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 153,
-						"y": 1,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1456,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_f3.png",
+					"filename": "beach_edge_south_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 153,
-						"y": 35,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1472,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_f1.png",
+					"filename": "beach_edge_south_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 153,
-						"y": 69,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1488,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_up_f2.png",
+					"filename": "beach_edge_south_b_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 153,
-						"y": 103,
-						"w": 32,
+						"x": 0,
+						"y": 1504,
+						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_f2.png",
+					"filename": "beach_edge_south_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 185,
-						"y": 121,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1520,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_f3.png",
+					"filename": "beach_edge_west_a_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 187,
-						"y": 1,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1536,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_f1.png",
+					"filename": "beach_edge_west_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 187,
-						"y": 35,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1552,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_f2.png",
+					"filename": "beach_edge_west_a_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 187,
-						"y": 69,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1568,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_up_f3.png",
+					"filename": "beach_edge_west_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 187,
-						"y": 103,
-						"w": 32,
+						"x": 0,
+						"y": 1584,
+						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_f3.png",
+					"filename": "beach_edge_west_a_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 32
+						"w": 16,
+						"h": 16
 					},
 					"frame": {
-						"x": 219,
-						"y": 121,
-						"w": 32,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 1600,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_left_f1.png",
+					"filename": "beach_edge_west_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 221,
-						"y": 1,
+						"x": 0,
+						"y": 1616,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_left_f2.png",
+					"filename": "beach_edge_west_b_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 221,
-						"y": 35,
+						"x": 0,
+						"y": 1632,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_east_left_f3.png",
+					"filename": "beach_edge_west_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 221,
-						"y": 69,
+						"x": 0,
+						"y": 1648,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_up_f1.png",
+					"filename": "beach_edge_west_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 221,
-						"y": 103,
-						"w": 32,
+						"x": 0,
+						"y": 1664,
+						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_right_f1.png",
+					"filename": "beach_edge_west_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 239,
-						"y": 1,
+						"x": 0,
+						"y": 1680,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_right_f2.png",
+					"filename": "beach_edge_west_b_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 239,
-						"y": 35,
+						"x": 0,
+						"y": 1696,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_right_f3.png",
+					"filename": "beach_edge_west_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 239,
-						"y": 69,
+						"x": 0,
+						"y": 1712,
 						"w": 16,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"h": 16
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_up_f2.png",
+					"filename": "deep_ocean_center",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 153,
-						"w": 32,
+						"x": 0,
+						"y": 1728,
+						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_south_west_up_f3.png",
+					"filename": "deep_ocean_corner_inner_northeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 35,
-						"y": 153,
-						"w": 32,
+						"x": 0,
+						"y": 1744,
+						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "deep_ocean.png",
+					"filename": "deep_ocean_corner_inner_northeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -924,18 +2334,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 69,
-						"y": 153,
+						"x": 0,
+						"y": 1760,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f1.png",
+					"filename": "deep_ocean_corner_inner_northeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -949,18 +2355,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 87,
-						"y": 153,
+						"x": 0,
+						"y": 1776,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f2.png",
+					"filename": "deep_ocean_corner_inner_northwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -974,18 +2376,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 105,
-						"y": 153,
+						"x": 0,
+						"y": 1792,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f3.png",
+					"filename": "deep_ocean_corner_inner_northwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -999,18 +2397,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 123,
-						"y": 153,
+						"x": 0,
+						"y": 1808,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f1.png",
+					"filename": "deep_ocean_corner_inner_northwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1024,18 +2418,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 141,
-						"y": 155,
+						"x": 0,
+						"y": 1824,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f2.png",
+					"filename": "deep_ocean_corner_inner_southeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1049,18 +2439,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 159,
-						"y": 155,
+						"x": 0,
+						"y": 1840,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f3.png",
+					"filename": "deep_ocean_corner_inner_southeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1074,18 +2460,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 177,
-						"y": 155,
+						"x": 0,
+						"y": 1856,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f1.png",
+					"filename": "deep_ocean_corner_inner_southeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1099,18 +2481,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 195,
-						"y": 155,
+						"x": 0,
+						"y": 1872,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f2.png",
+					"filename": "deep_ocean_corner_inner_southwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1124,18 +2502,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 213,
-						"y": 155,
+						"x": 0,
+						"y": 1888,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f3.png",
+					"filename": "deep_ocean_corner_inner_southwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1149,18 +2523,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 231,
-						"y": 155,
+						"x": 0,
+						"y": 1904,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f1.png",
+					"filename": "deep_ocean_corner_inner_southwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1174,18 +2544,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 171,
+						"x": 0,
+						"y": 1920,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f2.png",
+					"filename": "deep_ocean_corner_northeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1199,18 +2565,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 19,
-						"y": 171,
+						"x": 0,
+						"y": 1936,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f3.png",
+					"filename": "deep_ocean_corner_northeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1224,18 +2586,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 37,
-						"y": 171,
+						"x": 0,
+						"y": 1952,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f1.png",
+					"filename": "deep_ocean_corner_northeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1249,18 +2607,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 55,
-						"y": 171,
+						"x": 0,
+						"y": 1968,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f2.png",
+					"filename": "deep_ocean_corner_northwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1274,18 +2628,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 73,
-						"y": 171,
+						"x": 0,
+						"y": 1984,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f3.png",
+					"filename": "deep_ocean_corner_northwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1299,18 +2649,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 91,
-						"y": 171,
+						"x": 0,
+						"y": 2000,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f1.png",
+					"filename": "deep_ocean_corner_northwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1324,18 +2670,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 109,
-						"y": 171,
+						"x": 0,
+						"y": 2016,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f2.png",
+					"filename": "deep_ocean_corner_southeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1349,18 +2691,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 127,
-						"y": 173,
+						"x": 0,
+						"y": 2032,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f3.png",
+					"filename": "deep_ocean_corner_southeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1374,18 +2712,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 145,
-						"y": 173,
+						"x": 16,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f1.png",
+					"filename": "deep_ocean_corner_southeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1399,18 +2733,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 163,
-						"y": 173,
+						"x": 32,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f2.png",
+					"filename": "deep_ocean_corner_southwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1424,18 +2754,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 181,
-						"y": 173,
+						"x": 48,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f3.png",
+					"filename": "deep_ocean_corner_southwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1449,18 +2775,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 199,
-						"y": 173,
+						"x": 64,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f1.png",
+					"filename": "deep_ocean_corner_southwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1474,18 +2796,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 217,
-						"y": 173,
+						"x": 80,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f2.png",
+					"filename": "deep_ocean_edge_east_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1499,18 +2817,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 235,
-						"y": 173,
+						"x": 96,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f3.png",
+					"filename": "deep_ocean_edge_east_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1524,18 +2838,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 189,
+						"x": 112,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f1.png",
+					"filename": "deep_ocean_edge_east_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1549,18 +2859,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 19,
-						"y": 189,
+						"x": 128,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f2.png",
+					"filename": "deep_ocean_edge_north_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1574,18 +2880,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 37,
-						"y": 189,
+						"x": 144,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f3.png",
+					"filename": "deep_ocean_edge_north_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1599,18 +2901,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 55,
-						"y": 189,
+						"x": 160,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f1.png",
+					"filename": "deep_ocean_edge_north_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1624,18 +2922,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 73,
-						"y": 189,
+						"x": 176,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f2.png",
+					"filename": "deep_ocean_edge_south_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1649,18 +2943,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 91,
-						"y": 189,
+						"x": 192,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f3.png",
+					"filename": "deep_ocean_edge_south_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1674,18 +2964,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 109,
-						"y": 189,
+						"x": 208,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f1.png",
+					"filename": "deep_ocean_edge_south_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1699,18 +2985,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 127,
-						"y": 191,
+						"x": 224,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f2.png",
+					"filename": "deep_ocean_edge_west_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1724,18 +3006,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 145,
-						"y": 191,
+						"x": 240,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f3.png",
+					"filename": "deep_ocean_edge_west_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1749,18 +3027,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 163,
-						"y": 191,
+						"x": 256,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f1.png",
+					"filename": "deep_ocean_edge_west_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1774,18 +3048,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 181,
-						"y": 191,
+						"x": 272,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f2.png",
+					"filename": "grass_center",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1799,18 +3069,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 199,
-						"y": 191,
+						"x": 288,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f3.png",
+					"filename": "grass_corner_northeast",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1824,18 +3090,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 217,
-						"y": 191,
+						"x": 304,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "ocean.png",
+					"filename": "grass_corner_northwest",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1849,18 +3111,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 235,
-						"y": 191,
+						"x": 320,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_left_f1.png",
+					"filename": "grass_corner_southeast",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1874,18 +3132,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 207,
+						"x": 336,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_left_f2.png",
+					"filename": "grass_corner_southwest",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1899,18 +3153,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 19,
-						"y": 207,
+						"x": 352,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_north_east_left_f3.png",
+					"filename": "grass_edge_east_a",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1924,18 +3174,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 37,
-						"y": 207,
+						"x": 368,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_right_f1.png",
+					"filename": "grass_edge_east_b",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1949,18 +3195,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 55,
-						"y": 207,
+						"x": 384,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_right_f2.png",
+					"filename": "grass_edge_north_a",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1974,18 +3216,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 73,
-						"y": 207,
+						"x": 400,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_corner_north_west_right_f3.png",
+					"filename": "grass_edge_north_b",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1999,18 +3237,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 91,
-						"y": 207,
+						"x": 416,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_grass_center.png",
+					"filename": "grass_edge_south_a",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2024,18 +3258,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 109,
-						"y": 207,
+						"x": 432,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_grass_north_east.png",
+					"filename": "grass_edge_south_b",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2049,18 +3279,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 127,
-						"y": 209,
+						"x": 448,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_grass_north_west.png",
+					"filename": "grass_edge_west_a",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2074,18 +3300,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 145,
-						"y": 209,
+						"x": 464,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_grass_south_east.png",
+					"filename": "grass_edge_west_b",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2099,18 +3321,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 163,
-						"y": 209,
+						"x": 480,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
-					"filename": "terrain_grass_south_west.png",
+					"filename": "ocean_center",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2124,22 +3342,17 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 181,
-						"y": 209,
+						"x": 496,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				}
 			]
 		}
 	],
 	"meta": {
-		"app": "https://www.codeandweb.com/texturepacker",
-		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:7315c4083c9f111868d76267e463e100:4f66da7d432daaf019e26cfccdcbf713:cf827d152df04949dfee256cd0c8efd8$"
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.6"
 	}
 }
