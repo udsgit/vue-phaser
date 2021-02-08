@@ -4,13 +4,13 @@
 			"image": "textures.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 512,
+				"w": 1088,
 				"h": 2048
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "beach_corner_northeast_center_f1",
+					"filename": "beach_corner_inner_northeast_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_center_f2",
+					"filename": "beach_corner_inner_northeast_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_center_f3",
+					"filename": "beach_corner_inner_northeast_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -73,7 +73,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_first_f1",
+					"filename": "beach_corner_inner_northeast_corner_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -94,7 +94,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_first_f2",
+					"filename": "beach_corner_inner_northeast_corner_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -115,7 +115,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_first_f3",
+					"filename": "beach_corner_inner_northeast_corner_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -136,7 +136,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_second_f1",
+					"filename": "beach_corner_inner_northeast_south_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -157,7 +157,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_second_f2",
+					"filename": "beach_corner_inner_northeast_south_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -178,7 +178,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_east_second_f3",
+					"filename": "beach_corner_inner_northeast_south_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -199,7 +199,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_north_f1",
+					"filename": "beach_corner_inner_northeast_west_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -220,7 +220,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_north_f2",
+					"filename": "beach_corner_inner_northeast_west_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -241,7 +241,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northeast_edge_north_f3",
+					"filename": "beach_corner_inner_northeast_west_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -262,7 +262,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_center_f1",
+					"filename": "beach_corner_inner_northwest_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -283,7 +283,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_center_f2",
+					"filename": "beach_corner_inner_northwest_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -304,7 +304,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_center_f3",
+					"filename": "beach_corner_inner_northwest_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -325,7 +325,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_north_f1",
+					"filename": "beach_corner_inner_northwest_corner_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -346,7 +346,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_north_f2",
+					"filename": "beach_corner_inner_northwest_corner_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -367,7 +367,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_north_f3",
+					"filename": "beach_corner_inner_northwest_corner_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -388,7 +388,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_first_f1",
+					"filename": "beach_corner_inner_northwest_east_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -409,7 +409,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_first_f2",
+					"filename": "beach_corner_inner_northwest_east_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -430,7 +430,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_first_f3",
+					"filename": "beach_corner_inner_northwest_east_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -451,7 +451,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_second_f1",
+					"filename": "beach_corner_inner_northwest_south_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -472,7 +472,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_second_f2",
+					"filename": "beach_corner_inner_northwest_south_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -493,7 +493,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_northwest_edge_west_second_f3",
+					"filename": "beach_corner_inner_northwest_south_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -514,7 +514,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_center_f1",
+					"filename": "beach_corner_inner_southeast_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -535,7 +535,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_center_f2",
+					"filename": "beach_corner_inner_southeast_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -556,7 +556,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_center_f3",
+					"filename": "beach_corner_inner_southeast_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -577,7 +577,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_east_f1",
+					"filename": "beach_corner_inner_southeast_west_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -598,7 +598,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_east_f2",
+					"filename": "beach_corner_inner_southeast_west_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -619,7 +619,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_east_f3",
+					"filename": "beach_corner_inner_southeast_west_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -640,7 +640,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_first_f1",
+					"filename": "beach_corner_inner_southwest_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -661,7 +661,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_first_f2",
+					"filename": "beach_corner_inner_southwest_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -682,7 +682,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_first_f3",
+					"filename": "beach_corner_inner_southwest_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -703,7 +703,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_second_f1",
+					"filename": "beach_corner_inner_southwest_east_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -724,7 +724,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_second_f2",
+					"filename": "beach_corner_inner_southwest_east_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -745,7 +745,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_east_second_f3",
+					"filename": "beach_corner_inner_southwest_east_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -766,7 +766,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_first_f1",
+					"filename": "beach_corner_northeast_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -787,7 +787,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_first_f2",
+					"filename": "beach_corner_northeast_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -808,7 +808,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_first_f3",
+					"filename": "beach_corner_northeast_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -829,7 +829,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_second_f1",
+					"filename": "beach_corner_northeast_edge_east_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -850,7 +850,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_second_f2",
+					"filename": "beach_corner_northeast_edge_east_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -871,7 +871,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_edge_south_second_f3",
+					"filename": "beach_corner_northeast_edge_east_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -892,7 +892,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_south_f1",
+					"filename": "beach_corner_northeast_edge_east_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -913,7 +913,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_south_f2",
+					"filename": "beach_corner_northeast_edge_east_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -934,7 +934,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southeast_south_f3",
+					"filename": "beach_corner_northeast_edge_east_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -955,7 +955,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_center_f1",
+					"filename": "beach_corner_northeast_edge_north_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -976,7 +976,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_center_f2",
+					"filename": "beach_corner_northeast_edge_north_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -997,7 +997,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_center_f3",
+					"filename": "beach_corner_northeast_edge_north_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1018,7 +1018,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_first_f1",
+					"filename": "beach_corner_northwest_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1039,7 +1039,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_first_f2",
+					"filename": "beach_corner_northwest_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1060,7 +1060,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_first_f3",
+					"filename": "beach_corner_northwest_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1081,7 +1081,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_second_f1",
+					"filename": "beach_corner_northwest_edge_north_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1102,7 +1102,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_second_f2",
+					"filename": "beach_corner_northwest_edge_north_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1123,7 +1123,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_south_second_f3",
+					"filename": "beach_corner_northwest_edge_north_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1144,7 +1144,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_first_f1",
+					"filename": "beach_corner_northwest_edge_west_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1165,7 +1165,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_first_f2",
+					"filename": "beach_corner_northwest_edge_west_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1186,7 +1186,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_first_f3",
+					"filename": "beach_corner_northwest_edge_west_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1207,7 +1207,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_second_f1",
+					"filename": "beach_corner_northwest_edge_west_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1228,7 +1228,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_second_f2",
+					"filename": "beach_corner_northwest_edge_west_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1249,7 +1249,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_edge_west_second_f3",
+					"filename": "beach_corner_northwest_edge_west_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1270,7 +1270,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_south_f1",
+					"filename": "beach_corner_southeast_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1291,7 +1291,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_south_f2",
+					"filename": "beach_corner_southeast_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1312,7 +1312,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_south_f3",
+					"filename": "beach_corner_southeast_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1333,7 +1333,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_west_f1",
+					"filename": "beach_corner_southeast_east_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1354,7 +1354,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_west_f2",
+					"filename": "beach_corner_southeast_east_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1375,7 +1375,7 @@
 					}
 				},
 				{
-					"filename": "beach_corner_southwest_west_f3",
+					"filename": "beach_corner_southeast_east_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1396,7 +1396,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_first_f1",
+					"filename": "beach_corner_southeast_edge_east_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1417,7 +1417,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_first_f2",
+					"filename": "beach_corner_southeast_edge_east_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1438,7 +1438,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_first_f3",
+					"filename": "beach_corner_southeast_edge_east_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1459,7 +1459,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_second_f1",
+					"filename": "beach_corner_southeast_edge_east_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1480,7 +1480,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_second_f2",
+					"filename": "beach_corner_southeast_edge_east_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1501,7 +1501,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_a_second_f3",
+					"filename": "beach_corner_southeast_edge_east_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1522,7 +1522,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_first_f1",
+					"filename": "beach_corner_southeast_edge_south_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1543,7 +1543,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_first_f2",
+					"filename": "beach_corner_southeast_edge_south_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1564,7 +1564,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_first_f3",
+					"filename": "beach_corner_southeast_edge_south_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1585,7 +1585,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_second_f1",
+					"filename": "beach_corner_southeast_edge_south_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1606,7 +1606,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_second_f2",
+					"filename": "beach_corner_southeast_edge_south_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1627,7 +1627,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_east_b_second_f3",
+					"filename": "beach_corner_southeast_edge_south_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1648,7 +1648,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_a_f1",
+					"filename": "beach_corner_southeast_south_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1669,7 +1669,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_a_f2",
+					"filename": "beach_corner_southeast_south_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1690,7 +1690,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_a_f3",
+					"filename": "beach_corner_southeast_south_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1711,7 +1711,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_b_f1",
+					"filename": "beach_corner_southwest_center_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1732,7 +1732,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_b_f2",
+					"filename": "beach_corner_southwest_center_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1753,7 +1753,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_north_b_f3",
+					"filename": "beach_corner_southwest_center_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1774,7 +1774,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_first_f1",
+					"filename": "beach_corner_southwest_edge_south_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1795,7 +1795,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_first_f2",
+					"filename": "beach_corner_southwest_edge_south_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1816,7 +1816,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_first_f3",
+					"filename": "beach_corner_southwest_edge_south_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1837,7 +1837,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_second_f1",
+					"filename": "beach_corner_southwest_edge_south_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1858,7 +1858,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_second_f2",
+					"filename": "beach_corner_southwest_edge_south_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1879,7 +1879,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_a_second_f3",
+					"filename": "beach_corner_southwest_edge_south_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1900,7 +1900,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_first_f1",
+					"filename": "beach_corner_southwest_edge_west_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1921,7 +1921,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_first_f2",
+					"filename": "beach_corner_southwest_edge_west_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1942,7 +1942,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_first_f3",
+					"filename": "beach_corner_southwest_edge_west_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1963,7 +1963,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_second_f1",
+					"filename": "beach_corner_southwest_edge_west_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1984,7 +1984,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_second_f2",
+					"filename": "beach_corner_southwest_edge_west_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2005,7 +2005,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_south_b_second_f3",
+					"filename": "beach_corner_southwest_edge_west_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2026,7 +2026,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_first_f1",
+					"filename": "beach_corner_southwest_south_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2047,7 +2047,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_first_f2",
+					"filename": "beach_corner_southwest_south_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2068,7 +2068,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_first_f3",
+					"filename": "beach_corner_southwest_south_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2089,7 +2089,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_second_f1",
+					"filename": "beach_corner_southwest_west_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2110,7 +2110,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_second_f2",
+					"filename": "beach_corner_southwest_west_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2131,7 +2131,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_a_second_f3",
+					"filename": "beach_corner_southwest_west_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2152,7 +2152,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_first_f1",
+					"filename": "beach_edge_east_a_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2173,7 +2173,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_first_f2",
+					"filename": "beach_edge_east_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2194,7 +2194,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_first_f3",
+					"filename": "beach_edge_east_a_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2215,7 +2215,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_second_f1",
+					"filename": "beach_edge_east_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2236,7 +2236,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_second_f2",
+					"filename": "beach_edge_east_a_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2257,7 +2257,7 @@
 					}
 				},
 				{
-					"filename": "beach_edge_west_b_second_f3",
+					"filename": "beach_edge_east_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2278,7 +2278,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_center",
+					"filename": "beach_edge_east_b_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2299,7 +2299,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f1",
+					"filename": "beach_edge_east_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2320,7 +2320,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f2",
+					"filename": "beach_edge_east_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2341,7 +2341,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northeast_f3",
+					"filename": "beach_edge_east_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2362,7 +2362,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f1",
+					"filename": "beach_edge_east_b_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2383,7 +2383,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f2",
+					"filename": "beach_edge_east_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2404,7 +2404,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_northwest_f3",
+					"filename": "beach_edge_north_a_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2425,7 +2425,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f1",
+					"filename": "beach_edge_north_a_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2446,7 +2446,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f2",
+					"filename": "beach_edge_north_a_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2467,7 +2467,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southeast_f3",
+					"filename": "beach_edge_north_b_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2488,7 +2488,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f1",
+					"filename": "beach_edge_north_b_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2509,7 +2509,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f2",
+					"filename": "beach_edge_north_b_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2530,7 +2530,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_inner_southwest_f3",
+					"filename": "beach_edge_south_a_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2551,7 +2551,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f1",
+					"filename": "beach_edge_south_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2572,7 +2572,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f2",
+					"filename": "beach_edge_south_a_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2593,7 +2593,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northeast_f3",
+					"filename": "beach_edge_south_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2614,7 +2614,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f1",
+					"filename": "beach_edge_south_a_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2635,7 +2635,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f2",
+					"filename": "beach_edge_south_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2656,7 +2656,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_northwest_f3",
+					"filename": "beach_edge_south_b_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2677,7 +2677,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f1",
+					"filename": "beach_edge_south_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2698,7 +2698,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f2",
+					"filename": "beach_edge_south_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2719,7 +2719,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southeast_f3",
+					"filename": "beach_edge_south_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2740,7 +2740,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f1",
+					"filename": "beach_edge_south_b_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2761,7 +2761,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f2",
+					"filename": "beach_edge_south_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2782,7 +2782,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_corner_southwest_f3",
+					"filename": "beach_edge_west_a_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2803,7 +2803,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f1",
+					"filename": "beach_edge_west_a_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2824,7 +2824,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f2",
+					"filename": "beach_edge_west_a_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2845,7 +2845,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_east_f3",
+					"filename": "beach_edge_west_a_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2866,7 +2866,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f1",
+					"filename": "beach_edge_west_a_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2887,7 +2887,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f2",
+					"filename": "beach_edge_west_a_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2908,7 +2908,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_north_f3",
+					"filename": "beach_edge_west_b_first_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2929,7 +2929,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f1",
+					"filename": "beach_edge_west_b_first_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2950,7 +2950,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f2",
+					"filename": "beach_edge_west_b_first_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2971,7 +2971,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_south_f3",
+					"filename": "beach_edge_west_b_second_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2992,7 +2992,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f1",
+					"filename": "beach_edge_west_b_second_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3013,7 +3013,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f2",
+					"filename": "beach_edge_west_b_second_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3034,7 +3034,7 @@
 					}
 				},
 				{
-					"filename": "deep_ocean_edge_west_f3",
+					"filename": "deep_ocean_center",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3055,7 +3055,7 @@
 					}
 				},
 				{
-					"filename": "grass_center",
+					"filename": "deep_ocean_corner_inner_northeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3076,7 +3076,7 @@
 					}
 				},
 				{
-					"filename": "grass_corner_northeast",
+					"filename": "deep_ocean_corner_inner_northeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3097,7 +3097,7 @@
 					}
 				},
 				{
-					"filename": "grass_corner_northwest",
+					"filename": "deep_ocean_corner_inner_northeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3118,7 +3118,7 @@
 					}
 				},
 				{
-					"filename": "grass_corner_southeast",
+					"filename": "deep_ocean_corner_inner_northwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3139,7 +3139,7 @@
 					}
 				},
 				{
-					"filename": "grass_corner_southwest",
+					"filename": "deep_ocean_corner_inner_northwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3160,7 +3160,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_east_a",
+					"filename": "deep_ocean_corner_inner_northwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3181,7 +3181,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_east_b",
+					"filename": "deep_ocean_corner_inner_southeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3202,7 +3202,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_north_a",
+					"filename": "deep_ocean_corner_inner_southeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3223,7 +3223,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_north_b",
+					"filename": "deep_ocean_corner_inner_southeast_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3244,7 +3244,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_south_a",
+					"filename": "deep_ocean_corner_inner_southwest_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3265,7 +3265,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_south_b",
+					"filename": "deep_ocean_corner_inner_southwest_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3286,7 +3286,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_west_a",
+					"filename": "deep_ocean_corner_inner_southwest_f3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3307,7 +3307,7 @@
 					}
 				},
 				{
-					"filename": "grass_edge_west_b",
+					"filename": "deep_ocean_corner_northeast_f1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3328,7 +3328,7 @@
 					}
 				},
 				{
-					"filename": "ocean_center",
+					"filename": "deep_ocean_corner_northeast_f2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -3343,6 +3343,762 @@
 					},
 					"frame": {
 						"x": 496,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_northeast_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 512,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_northwest_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 528,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_northwest_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 544,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_northwest_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 560,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southeast_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 576,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southeast_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 592,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southeast_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 608,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southwest_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 624,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southwest_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 640,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_corner_southwest_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 656,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_east_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 672,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_east_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 688,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_east_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 704,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_north_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 720,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_north_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 736,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_north_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 752,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_south_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 768,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_south_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 784,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_south_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 800,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_west_f1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 816,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_west_f2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 832,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "deep_ocean_edge_west_f3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 848,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_center",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 864,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_corner_northeast",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 880,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_corner_northwest",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 896,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_corner_southeast",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 912,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_corner_southwest",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 928,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_east_a",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 944,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_east_b",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 960,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_north_a",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 976,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_north_b",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 992,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_south_a",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1008,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_south_b",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1024,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_west_a",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1040,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "grass_edge_west_b",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1056,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ocean_center",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1072,
 						"y": 0,
 						"w": 16,
 						"h": 16

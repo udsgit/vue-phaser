@@ -256,11 +256,316 @@ export default class    MapScene extends Scene {
         this.createBeachCornerSouthWestEdgeSouthSecondSprites();
         this.createBeachCornerSouthWestSouthSprites();
 
+        this.createBeachEdgeEastAFirstSprites();
+        this.createBeachEdgeEastASecondSprites();
+        this.createBeachEdgeEastBFirstSprites();
+        this.createBeachEdgeEastBSecondSprites();
 
+        this.createBeachEdgeNorthASprites();
+        this.createBeachEdgeNorthBSprites();
+
+        this.createBeachEdgeSouthAFirstSprites();
+        this.createBeachEdgeSouthASecondSprites();
+        this.createBeachEdgeSouthBFirstSprites();
+        this.createBeachEdgeSouthBSecondSprites();
+
+        this.createBeachEdgeWestAFirstSprites();
+        this.createBeachEdgeWestASecondSprites();
+        this.createBeachEdgeWestBFirstSprites();
+        this.createBeachEdgeWestBSecondSprites();
+
+        this.createBeachCornerInnerNorthEastCenterSprites();
+        this.createBeachCornerInnerNorthEastCornerSprites();
+        this.createBeachCornerInnerNorthEastSouthSprites();
+        this.createBeachCornerInnerNorthEastWestSprites();
+
+        this.createBeachCornerInnerNorthWestCenterSprites();
+        this.createBeachCornerInnerNorthWestCornerSprites();
+        this.createBeachCornerInnerNorthWestSouthSprites();
+        this.createBeachCornerInnerNorthWestEastSprites();
+
+        this.createBeachCornerInnerSouthEastCenterSprites();
+        this.createBeachCornerInnerSouthEastWestSprites();
+
+        this.createBeachCornerInnerSouthWestCenterSprites();
+        this.createBeachCornerInnerSouthWestEastSprites();
 
 
 
     }
+
+    createBeachCornerInnerNorthEastCenterSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(83));
+        coords[20].push(...this.col(64,97));
+        coords[21].push(...this.col(55));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_center", 2, -1, true);
+    }
+    createBeachCornerInnerNorthEastCornerSprites(){
+        const coords = this.getCoords();
+
+
+        coords[21].push(...this.col(63,96));
+        coords[22].push(...this.col(54));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_corner", 2, -1, true);
+    }
+    createBeachCornerInnerNorthEastSouthSprites(){
+        const coords = this.getCoords();
+
+        coords[19].push(...this.col(83));
+        coords[21].push(...this.col(64,97));
+        coords[22].push(...this.col(55));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_south", 2, -1, true);
+    }
+    createBeachCornerInnerNorthEastWestSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(82));
+        coords[20].push(...this.col(63,96));
+        coords[21].push(...this.col(54));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_west", 2, -1, true);
+    }
+
+    createBeachCornerInnerNorthWestCenterSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(119));
+        coords[18].push(...this.col(81));
+        coords[19].push(...this.col(34,115));
+        coords[20].push(...this.col(61,92));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_center", 2, -1, true);
+    }
+    createBeachCornerInnerNorthWestCornerSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(120));
+        coords[20].push(...this.col(35,116));
+        coords[21].push(...this.col(62,93));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_corner", 2, -1, true);
+    }
+    createBeachCornerInnerNorthWestSouthSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(119));
+        coords[19].push(...this.col(81));
+        coords[20].push(...this.col(34,115));
+        coords[21].push(...this.col(61,92));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_south", 2, -1, true);
+    }
+    createBeachCornerInnerNorthWestEastSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(120));
+        coords[18].push(...this.col(82));
+        coords[19].push(...this.col(116));
+        coords[20].push(...this.col(62,93));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_east", 2, -1, true);
+    }
+
+    createBeachCornerInnerSouthEastCenterSprites(){
+        const coords = this.getCoords();
+
+        coords[13].push(...this.col(84));
+        coords[15].push(...this.col(81));
+        coords[16].push(...this.col(60,101));
+        coords[17].push(...this.col(67));
+        coords[18].push(...this.col(31,55,97));
+        coords[19].push(...this.col(78));
+        coords[21].push(...this.col(83));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_southeast_center", 2, -1, true);
+    }
+    createBeachCornerInnerSouthEastWestSprites(){
+        const coords = this.getCoords();
+
+        coords[13].push(...this.col(83));
+        coords[15].push(...this.col(80));
+        coords[16].push(...this.col(59,100));
+        coords[17].push(...this.col(66));
+        coords[18].push(...this.col(30,54,96));
+        coords[19].push(...this.col(77));
+        coords[21].push(...this.col(82));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_southeast_west", 2, -1, true);
+    }
+
+    createBeachCornerInnerSouthWestCenterSprites(){
+        const coords = this.getCoords();
+
+        coords[13].push(...this.col(88));
+        coords[16].push(...this.col(91));
+        coords[17].push(...this.col(64,70));
+        coords[18].push(...this.col(93));
+        coords[21].push(...this.col(81));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_southwest_center", 2, -1, true);
+    }
+    createBeachCornerInnerSouthWestEastSprites(){
+        const coords = this.getCoords();
+
+        coords[13].push(...this.col(89));
+        coords[16].push(...this.col(92));
+        coords[17].push(...this.col(65));
+        coords[18].push(...this.col(94));
+
+        this.createSprites(coords, "textures", "beach_corner_inner_southwest_east", 2, -1, true);
+    }
+
+    createBeachEdgeEastAFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[15].push(...this.col(91));
+        coords[16].push(...this.col(64,70));
+        coords[19].push(...this.col(72));
+        coords[20].push(...this.col(81));
+        coords[21].push(...this.col(72,115));
+
+        this.createSprites(coords, "textures", "beach_edge_east_a_first", 2, -1, true);
+    }
+    createBeachEdgeEastASecondSprites(){
+        const coords = this.getCoords();
+
+        coords[15].push(...this.col(92));
+        coords[16].push(...this.col(65,71));
+        coords[19].push(...this.col(73));
+        coords[21].push(...this.col(73,116));
+
+        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
+    }
+    createBeachEdgeEastBFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[20].push(...this.col(72));
+
+        this.createSprites(coords, "textures", "beach_edge_east_b_first", 2, -1, true);
+    }
+    createBeachEdgeEastBSecondSprites(){
+        const coords = this.getCoords();
+
+        coords[20].push(...this.col(73));
+
+        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
+    }
+
+    createBeachEdgeNorthASprites(){
+        const coords = this.getCoords();
+
+        coords[11].push(...this.col(86));
+        coords[14].push(...this.col(62,103,105,107,109,111,113,115,117,119,121));
+        coords[16].push(...this.col(33,57,99));
+        coords[18].push(...this.col(52,95));
+
+        this.createSprites(coords, "textures", "beach_edge_north_a", 2, -1, true);
+    }
+    createBeachEdgeNorthBSprites(){
+        const coords = this.getCoords();
+
+        coords[14].push(...this.col(104,106,108,110,112,114,116,118,120,122));
+        coords[16].push(...this.col(34,58));
+        coords[18].push(...this.col(53));
+
+        this.createSprites(coords, "textures", "beach_edge_north_b", 2, -1, true);
+    }
+
+
+    createBeachEdgeSouthAFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(121));
+        coords[19].push(...this.col(117));
+        coords[20].push(...this.col(94));
+        coords[21].push(...this.col(52));
+        coords[22].push(...this.col(30,32));
+        coords[23].push(...this.col(57,59,66,68,70,77,79,81,83,85,87,89,99,101,103,105,107,109,111,113));
+
+        this.createSprites(coords, "textures", "beach_edge_south_a_first", 2, -1, true);
+    }
+    createBeachEdgeSouthASecondSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(121));
+        coords[20].push(...this.col(117));
+        coords[21].push(...this.col(94));
+        coords[22].push(...this.col(52));
+        coords[23].push(...this.col(30,32));
+        coords[24].push(...this.col(57,59,66,68,70,77,79,81,83,85,87,89,99,101,103,105,107,109,111,113));
+
+        this.createSprites(coords, "textures", "beach_edge_south_a_second", 2, -1, true);
+    }
+    createBeachEdgeSouthBFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(122));
+        coords[20].push(...this.col(95));
+        coords[21].push(...this.col(53));
+        coords[22].push(...this.col(31));
+        coords[23].push(...this.col(58,67,69,78,80,82,84,86,88,90,100,102,104,106,108,110,112));
+
+        this.createSprites(coords, "textures", "beach_edge_south_b_first", 2, -1, true);
+    }
+    createBeachEdgeSouthBSecondSprites(){
+        const coords = this.getCoords();
+
+        coords[18].push(...this.col(122));
+        coords[21].push(...this.col(95));
+        coords[22].push(...this.col(53));
+        coords[23].push(...this.col(31));
+        coords[24].push(...this.col(58,67,69,78,80,82,84,86,88,90,100,102,104,106,108,110,112));
+
+        this.createSprites(coords, "textures", "beach_edge_south_b_second", 2, -1, true);
+    }
+
+    createBeachEdgeWestAFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[16].push(...this.col(67));
+        coords[18].push(...this.col(78));
+        coords[20].push(...this.col(28,83));
+        coords[21].push(...this.col(75));
+
+        this.createSprites(coords, "textures", "beach_edge_west_a_first", 2, -1, true);
+    }
+    createBeachEdgeWestASecondSprites(){
+        const coords = this.getCoords();
+
+        coords[16].push(...this.col(66));
+        coords[18].push(...this.col(77));
+        coords[20].push(...this.col(27));
+        coords[21].push(...this.col(74));
+
+        this.createSprites(coords, "textures", "beach_edge_west_a_second", 2, -1, true);
+    }
+    createBeachEdgeWestBFirstSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(78));
+
+        this.createSprites(coords, "textures", "beach_edge_west_b_first", 2, -1, true);
+    }
+    createBeachEdgeWestBSecondSprites(){
+        const coords = this.getCoords();
+
+        coords[17].push(...this.col(77));
+
+        this.createSprites(coords, "textures", "beach_edge_west_b_second", 2, -1, true);
+    }
+
+
+
+
+
+
+
+
 
     createBeachCornerNorthEastEdgeNorthSprites(){
         const coords = this.getCoords();
