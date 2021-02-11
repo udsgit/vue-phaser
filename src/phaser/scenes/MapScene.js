@@ -5,7 +5,7 @@ import Link from "@/phaser/classes/Link";
 import Image from "@/phaser/classes/Image.js";
 import Sprite from "@/phaser/classes/Sprite";
 
-export default class    MapScene extends Scene {
+export default class MapScene extends Scene {
     constructor(emit) {
         super("Map");
         this.emit = emit;
@@ -185,13 +185,13 @@ export default class    MapScene extends Scene {
 
     }
 
-    createMap(){
+    createMap() {
         this.createDeepOceanTiles();
         this.createGrassTiles();
         this.createBeachTiles();
     }
 
-    createDeepOceanTiles(){
+    createDeepOceanTiles() {
         this.createDeepOceanCenterImages();
 
         this.createDeepOceanCornerInnerNorthEastSprites();
@@ -209,7 +209,8 @@ export default class    MapScene extends Scene {
         this.createDeepOceanEdgeSouthSprites();
         this.createDeepOceanEdgeWestSprites();
     }
-    createGrassTiles(){
+
+    createGrassTiles() {
         this.createGrassCenterImages();
 
         this.createGrassCornerNorthEastImages();
@@ -228,7 +229,8 @@ export default class    MapScene extends Scene {
 
 
     }
-    createBeachTiles(){
+
+    createBeachTiles() {
 
         this.createBeachCornerNorthEastEdgeNorthSprites();
         this.createBeachCornerNorthEastCenterSprites();
@@ -291,127 +293,178 @@ export default class    MapScene extends Scene {
         this.createBeachCornerInnerSouthWestEastSprites();
 
 
-
     }
 
-    createBeachCornerInnerNorthEastCenterSprites(){
+    createBeachCornerInnerNorthEastCenterSprites() {
         const coords = this.getCoords();
 
+        coords[4].push(...this.col(99));
+        coords[5].push(...this.col(71));
+        coords[7].push(...this.col(94,104,110));
+        coords[8].push(...this.col(73));
+        coords[11].push(...this.col(43));
         coords[18].push(...this.col(83));
-        coords[20].push(...this.col(64,97));
+        coords[20].push(...this.col(64, 97));
         coords[21].push(...this.col(55));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northeast_center", 2, -1, true);
     }
-    createBeachCornerInnerNorthEastCornerSprites(){
+    createBeachCornerInnerNorthEastCornerSprites() {
         const coords = this.getCoords();
 
 
-        coords[21].push(...this.col(63,96));
+        coords[6].push(...this.col(70));
+        coords[8].push(...this.col(93,103,109));
+        coords[9].push(...this.col(72));
+        coords[12].push(...this.col(42));
+        coords[21].push(...this.col(63, 96));
         coords[22].push(...this.col(54));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northeast_corner", 2, -1, true);
     }
-    createBeachCornerInnerNorthEastSouthSprites(){
+    createBeachCornerInnerNorthEastSouthSprites() {
         const coords = this.getCoords();
 
+        coords[5].push(...this.col(99));
+        coords[6].push(...this.col(71));
+        coords[8].push(...this.col(94,104,110));
+        coords[9].push(...this.col(73));
+        coords[12].push(...this.col(43));
         coords[19].push(...this.col(83));
-        coords[21].push(...this.col(64,97));
+        coords[21].push(...this.col(64, 97));
         coords[22].push(...this.col(55));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northeast_south", 2, -1, true);
     }
-    createBeachCornerInnerNorthEastWestSprites(){
+    createBeachCornerInnerNorthEastWestSprites() {
         const coords = this.getCoords();
 
+        coords[4].push(...this.col(98));
+        coords[5].push(...this.col(70));
+        coords[7].push(...this.col(93,103,109));
+        coords[8].push(...this.col(72));
+        coords[11].push(...this.col(42));
         coords[18].push(...this.col(82));
-        coords[20].push(...this.col(63,96));
+        coords[20].push(...this.col(63, 96));
         coords[21].push(...this.col(54));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northeast_west", 2, -1, true);
     }
 
-    createBeachCornerInnerNorthWestCenterSprites(){
+    createBeachCornerInnerNorthWestCenterSprites() {
         const coords = this.getCoords();
 
+        coords[5].push(...this.col(61,81));
+        coords[6].push(...this.col(117));
+        coords[7].push(...this.col(101,107));
+        coords[8].push(...this.col(56,76));
+        coords[10].push(...this.col(50));
         coords[17].push(...this.col(119));
         coords[18].push(...this.col(81));
-        coords[19].push(...this.col(34,115));
-        coords[20].push(...this.col(61,92));
+        coords[19].push(...this.col(34, 115));
+        coords[20].push(...this.col(61, 92));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northwest_center", 2, -1, true);
     }
-    createBeachCornerInnerNorthWestCornerSprites(){
+    createBeachCornerInnerNorthWestCornerSprites() {
         const coords = this.getCoords();
 
+        coords[6].push(...this.col(62,82));
+        coords[7].push(...this.col(118));
+        coords[8].push(...this.col(102,108));
+        coords[9].push(...this.col(57,77));
+        coords[11].push(...this.col(51));
         coords[18].push(...this.col(120));
-        coords[20].push(...this.col(35,116));
-        coords[21].push(...this.col(62,93));
+        coords[20].push(...this.col(35, 116));
+        coords[21].push(...this.col(62, 93));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northwest_corner", 2, -1, true);
     }
-    createBeachCornerInnerNorthWestSouthSprites(){
+    createBeachCornerInnerNorthWestSouthSprites() {
         const coords = this.getCoords();
 
+        coords[6].push(...this.col(61,81));
+        coords[7].push(...this.col(117));
+        coords[8].push(...this.col(101,107));
+        coords[9].push(...this.col(56,76));
+        coords[11].push(...this.col(50));
         coords[18].push(...this.col(119));
         coords[19].push(...this.col(81));
-        coords[20].push(...this.col(34,115));
-        coords[21].push(...this.col(61,92));
+        coords[20].push(...this.col(34, 115));
+        coords[21].push(...this.col(61, 92));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northwest_south", 2, -1, true);
     }
-    createBeachCornerInnerNorthWestEastSprites(){
+    createBeachCornerInnerNorthWestEastSprites() {
         const coords = this.getCoords();
 
+        coords[5].push(...this.col(62,82));
+        coords[6].push(...this.col(118));
+        coords[7].push(...this.col(102,108));
+        coords[8].push(...this.col(57,77));
+        coords[10].push(...this.col(51));
         coords[17].push(...this.col(120));
         coords[18].push(...this.col(82));
         coords[19].push(...this.col(116));
-        coords[20].push(...this.col(62,93));
+        coords[20].push(...this.col(62, 93));
 
         this.createSprites(coords, "textures", "beach_corner_inner_northwest_east", 2, -1, true);
     }
 
-    createBeachCornerInnerSouthEastCenterSprites(){
+    createBeachCornerInnerSouthEastCenterSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(48,75,94));
+        coords[3].push(...this.col(109));
+        coords[4].push(...this.col(41));
+        coords[6].push(...this.col(99));
         coords[13].push(...this.col(84));
         coords[15].push(...this.col(81));
-        coords[16].push(...this.col(60,101));
+        coords[16].push(...this.col(60, 101));
         coords[17].push(...this.col(67));
-        coords[18].push(...this.col(31,55,97));
+        coords[18].push(...this.col(31, 55, 97));
         coords[19].push(...this.col(78));
         coords[21].push(...this.col(83));
 
         this.createSprites(coords, "textures", "beach_corner_inner_southeast_center", 2, -1, true);
     }
-    createBeachCornerInnerSouthEastWestSprites(){
+    createBeachCornerInnerSouthEastWestSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(47,74,93));
+        coords[3].push(...this.col(108));
+        coords[4].push(...this.col(40));
         coords[13].push(...this.col(83));
         coords[15].push(...this.col(80));
-        coords[16].push(...this.col(59,100));
+        coords[16].push(...this.col(59, 100));
         coords[17].push(...this.col(66));
-        coords[18].push(...this.col(30,54,96));
+        coords[18].push(...this.col(30, 54, 96));
         coords[19].push(...this.col(77));
         coords[21].push(...this.col(82));
 
         this.createSprites(coords, "textures", "beach_corner_inner_southeast_west", 2, -1, true);
     }
 
-    createBeachCornerInnerSouthWestCenterSprites(){
+    createBeachCornerInnerSouthWestCenterSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(64,79));
+        coords[3].push(...this.col(99,118));
+        coords[6].push(...this.col(97));
         coords[13].push(...this.col(88));
         coords[16].push(...this.col(91));
-        coords[17].push(...this.col(64,70));
+        coords[17].push(...this.col(64, 70));
         coords[18].push(...this.col(93));
         coords[21].push(...this.col(81));
 
         this.createSprites(coords, "textures", "beach_corner_inner_southwest_center", 2, -1, true);
     }
-    createBeachCornerInnerSouthWestEastSprites(){
+    createBeachCornerInnerSouthWestEastSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(65,80));
+        coords[3].push(...this.col(100,119));
+        coords[6].push(...this.col(98));
         coords[13].push(...this.col(89));
         coords[16].push(...this.col(92));
         coords[17].push(...this.col(65));
@@ -420,35 +473,37 @@ export default class    MapScene extends Scene {
         this.createSprites(coords, "textures", "beach_corner_inner_southwest_east", 2, -1, true);
     }
 
-    createBeachEdgeEastAFirstSprites(){
+    createBeachEdgeEastAFirstSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(99,118));
         coords[15].push(...this.col(91));
-        coords[16].push(...this.col(64,70));
+        coords[16].push(...this.col(64, 70));
         coords[19].push(...this.col(72));
         coords[20].push(...this.col(81));
-        coords[21].push(...this.col(72,115));
+        coords[21].push(...this.col(72, 115));
 
         this.createSprites(coords, "textures", "beach_edge_east_a_first", 2, -1, true);
     }
-    createBeachEdgeEastASecondSprites(){
+    createBeachEdgeEastASecondSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(100,119));
         coords[15].push(...this.col(92));
-        coords[16].push(...this.col(65,71));
+        coords[16].push(...this.col(65, 71));
         coords[19].push(...this.col(73));
-        coords[21].push(...this.col(73,116));
+        coords[21].push(...this.col(73, 116));
 
         this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
     }
-    createBeachEdgeEastBFirstSprites(){
+    createBeachEdgeEastBFirstSprites() {
         const coords = this.getCoords();
 
         coords[20].push(...this.col(72));
 
         this.createSprites(coords, "textures", "beach_edge_east_b_first", 2, -1, true);
     }
-    createBeachEdgeEastBSecondSprites(){
+    createBeachEdgeEastBSecondSprites() {
         const coords = this.getCoords();
 
         coords[20].push(...this.col(73));
@@ -456,87 +511,123 @@ export default class    MapScene extends Scene {
         this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
     }
 
-    createBeachEdgeNorthASprites(){
+    createBeachEdgeNorthASprites() {
         const coords = this.getCoords();
 
+        coords[0].push(...this.col(50,52,54,56,58,60,62,77,96,111,113,115));
+        coords[2].push(...this.col(43,45,66,68,70,72,81,83));
+        coords[3].push(...this.col(101,103,105,107));
         coords[11].push(...this.col(86));
-        coords[14].push(...this.col(62,103,105,107,109,111,113,115,117,119,121));
-        coords[16].push(...this.col(33,57,99));
-        coords[18].push(...this.col(52,95));
+        coords[14].push(...this.col(62, 103, 105, 107, 109, 111, 113, 115, 117, 119, 121));
+        coords[16].push(...this.col(33, 57, 99));
+        coords[18].push(...this.col(52, 95));
 
         this.createSprites(coords, "textures", "beach_edge_north_a", 2, -1, true);
     }
-    createBeachEdgeNorthBSprites(){
+    createBeachEdgeNorthBSprites() {
         const coords = this.getCoords();
 
-        coords[14].push(...this.col(104,106,108,110,112,114,116,118,120,122));
-        coords[16].push(...this.col(34,58));
+        coords[0].push(...this.col(51,53,55,57,59,61,97,112,114,116));
+        coords[2].push(...this.col(44,46,67,69,71,73,82,84));
+        coords[3].push(...this.col(102,104,106));
+        coords[14].push(...this.col(104, 106, 108, 110, 112, 114, 116, 118, 120, 122));
+        coords[16].push(...this.col(34, 58));
         coords[18].push(...this.col(53));
 
         this.createSprites(coords, "textures", "beach_edge_north_b", 2, -1, true);
     }
 
-
-    createBeachEdgeSouthAFirstSprites(){
+    createBeachEdgeSouthAFirstSprites() {
         const coords = this.getCoords();
 
+        coords[5].push(...this.col(63,65,67,69,83));
+        coords[6].push(...this.col(119));
+        coords[8].push(...this.col(58,78));
+        coords[10].push(...this.col(52,54));
+        coords[11].push(...this.col(40,66));
+        coords[13].push(...this.col(45,47));
         coords[17].push(...this.col(121));
         coords[19].push(...this.col(117));
         coords[20].push(...this.col(94));
         coords[21].push(...this.col(52));
-        coords[22].push(...this.col(30,32));
-        coords[23].push(...this.col(57,59,66,68,70,77,79,81,83,85,87,89,99,101,103,105,107,109,111,113));
+        coords[22].push(...this.col(30, 32));
+        coords[23].push(...this.col(57, 59, 66, 68, 70, 77, 79, 81, 83, 85, 87, 89, 99, 101, 103, 105, 107, 109, 111, 113));
 
         this.createSprites(coords, "textures", "beach_edge_south_a_first", 2, -1, true);
     }
-    createBeachEdgeSouthASecondSprites(){
+    createBeachEdgeSouthASecondSprites() {
         const coords = this.getCoords();
 
+        coords[6].push(...this.col(63,65,67,69,83));
+        coords[7].push(...this.col(119));
+        coords[9].push(...this.col(58,78));
+        coords[11].push(...this.col(52,54));
+        coords[12].push(...this.col(40,66));
+        coords[14].push(...this.col(45,47));
         coords[18].push(...this.col(121));
         coords[20].push(...this.col(117));
         coords[21].push(...this.col(94));
         coords[22].push(...this.col(52));
-        coords[23].push(...this.col(30,32));
-        coords[24].push(...this.col(57,59,66,68,70,77,79,81,83,85,87,89,99,101,103,105,107,109,111,113));
+        coords[23].push(...this.col(30, 32));
+        coords[24].push(...this.col(57, 59, 66, 68, 70, 77, 79, 81, 83, 85, 87, 89, 99, 101, 103, 105, 107, 109, 111, 113));
 
         this.createSprites(coords, "textures", "beach_edge_south_a_second", 2, -1, true);
     }
-    createBeachEdgeSouthBFirstSprites(){
+    createBeachEdgeSouthBFirstSprites() {
         const coords = this.getCoords();
 
+
+        coords[5].push(...this.col(64,66,68,84));
+        coords[8].push(...this.col(59,79));
+        coords[10].push(...this.col(53));
+        coords[11].push(...this.col(41));
+        coords[13].push(...this.col(46,48));
         coords[17].push(...this.col(122));
         coords[20].push(...this.col(95));
         coords[21].push(...this.col(53));
         coords[22].push(...this.col(31));
-        coords[23].push(...this.col(58,67,69,78,80,82,84,86,88,90,100,102,104,106,108,110,112));
+        coords[23].push(...this.col(58, 67, 69, 78, 80, 82, 84, 86, 88, 90, 100, 102, 104, 106, 108, 110, 112));
 
         this.createSprites(coords, "textures", "beach_edge_south_b_first", 2, -1, true);
     }
-    createBeachEdgeSouthBSecondSprites(){
+    createBeachEdgeSouthBSecondSprites() {
         const coords = this.getCoords();
 
+        coords[6].push(...this.col(64,66,68,84));
+        coords[9].push(...this.col(59,79));
+        coords[11].push(...this.col(53));
+        coords[12].push(...this.col(41));
+        coords[14].push(...this.col(46,48));
         coords[18].push(...this.col(122));
         coords[21].push(...this.col(95));
         coords[22].push(...this.col(53));
         coords[23].push(...this.col(31));
-        coords[24].push(...this.col(58,67,69,78,80,82,84,86,88,90,100,102,104,106,108,110,112));
+        coords[24].push(...this.col(58, 67, 69, 78, 80, 82, 84, 86, 88, 90, 100, 102, 104, 106, 108, 110, 112));
 
         this.createSprites(coords, "textures", "beach_edge_south_b_second", 2, -1, true);
     }
 
-    createBeachEdgeWestAFirstSprites(){
+    createBeachEdgeWestAFirstSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(109));
+        coords[4].push(...this.col(91));
+        coords[6].push(...this.col(38));
+        coords[8].push(...this.col(38));
         coords[16].push(...this.col(67));
         coords[18].push(...this.col(78));
-        coords[20].push(...this.col(28,83));
+        coords[20].push(...this.col(28, 83));
         coords[21].push(...this.col(75));
 
         this.createSprites(coords, "textures", "beach_edge_west_a_first", 2, -1, true);
     }
-    createBeachEdgeWestASecondSprites(){
+    createBeachEdgeWestASecondSprites() {
         const coords = this.getCoords();
 
+        coords[2].push(...this.col(108));
+        coords[4].push(...this.col(90));
+        coords[6].push(...this.col(37));
+        coords[8].push(...this.col(37));
         coords[16].push(...this.col(66));
         coords[18].push(...this.col(77));
         coords[20].push(...this.col(27));
@@ -544,415 +635,413 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "beach_edge_west_a_second", 2, -1, true);
     }
-    createBeachEdgeWestBFirstSprites(){
+    createBeachEdgeWestBFirstSprites() {
         const coords = this.getCoords();
+
+
+
+        coords[5].push(...this.col(91));
+        coords[7].push(...this.col(38));
+        coords[9].push(...this.col(38));
 
         coords[17].push(...this.col(78));
 
         this.createSprites(coords, "textures", "beach_edge_west_b_first", 2, -1, true);
     }
-    createBeachEdgeWestBSecondSprites(){
+    createBeachEdgeWestBSecondSprites() {
         const coords = this.getCoords();
 
+        coords[5].push(...this.col(90));
+        coords[7].push(...this.col(37));
+        coords[9].push(...this.col(37));
         coords[17].push(...this.col(77));
 
         this.createSprites(coords, "textures", "beach_edge_west_b_second", 2, -1, true);
     }
 
-
-
-
-
-
-
-
-
-    createBeachCornerNorthEastEdgeNorthSprites(){
+    createBeachCornerNorthEastEdgeNorthSprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(63,78,98,117));
+        coords[0].push(...this.col(63, 78, 98, 117));
         coords[2].push(...this.col(85));
         coords[3].push(...this.col(120));
         coords[5].push(...this.col(132));
         coords[7].push(...this.col(67));
         coords[11].push(...this.col(87));
         coords[13].push(...this.col(90));
-        coords[14].push(...this.col(63,69,123));
-        coords[16].push(...this.col(35,92));
+        coords[14].push(...this.col(63, 69, 123));
+        coords[16].push(...this.col(35, 92));
         coords[17].push(...this.col(71));
         coords[20].push(...this.col(42));
 
         this.createSprites(coords, "textures", "beach_corner_northeast_edge_north", 2, -1, true);
     }
-    createBeachCornerNorthEastCenterSprites(){
+    createBeachCornerNorthEastCenterSprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(64,79,99,118));
+        coords[0].push(...this.col(64, 79, 99, 118));
         coords[2].push(...this.col(86));
         coords[3].push(...this.col(121));
         coords[5].push(...this.col(133));
         coords[7].push(...this.col(68));
         coords[11].push(...this.col(88));
         coords[13].push(...this.col(91));
-        coords[14].push(...this.col(64,70,124));
-        coords[16].push(...this.col(36,93));
+        coords[14].push(...this.col(64, 70, 124));
+        coords[16].push(...this.col(36, 93));
         coords[17].push(...this.col(72));
         coords[20].push(...this.col(43));
 
         this.createSprites(coords, "textures", "beach_corner_northeast_center", 2, -1, true);
     }
-    createBeachCornerNorthEastEdgeEastFirstSprites(){
+    createBeachCornerNorthEastEdgeEastFirstSprites() {
         const coords = this.getCoords();
 
-        coords[1].push(...this.col(64,79,99,118));
+        coords[1].push(...this.col(64, 79, 99, 118));
         coords[3].push(...this.col(86));
         coords[4].push(...this.col(121));
         coords[6].push(...this.col(133));
         coords[8].push(...this.col(68));
         coords[12].push(...this.col(88));
         coords[14].push(...this.col(91));
-        coords[15].push(...this.col(64,70,124));
-        coords[17].push(...this.col(36,93));
+        coords[15].push(...this.col(64, 70, 124));
+        coords[17].push(...this.col(36, 93));
         coords[18].push(...this.col(72));
         coords[21].push(...this.col(43));
 
         this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_first", 2, -1, true);
     }
-    createBeachCornerNorthEastEdgeEastSecondSprites(){
+    createBeachCornerNorthEastEdgeEastSecondSprites() {
         const coords = this.getCoords();
 
-        coords[1].push(...this.col(65,80,100,119));
+        coords[1].push(...this.col(65, 80, 100, 119));
         coords[3].push(...this.col(87));
         coords[4].push(...this.col(122));
         coords[6].push(...this.col(134));
         coords[8].push(...this.col(69));
         coords[12].push(...this.col(89));
         coords[14].push(...this.col(92));
-        coords[15].push(...this.col(65,71,125));
-        coords[17].push(...this.col(37,94));
+        coords[15].push(...this.col(65, 71, 125));
+        coords[17].push(...this.col(37, 94));
         coords[18].push(...this.col(73));
         coords[21].push(...this.col(44));
 
         this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_second", 2, -1, true);
     }
 
-    createBeachCornerNorthWestEdgeNorthSprites(){
+    createBeachCornerNorthWestEdgeNorthSprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(49,76,95,110));
-        coords[2].push(...this.col(42,92));
+        coords[0].push(...this.col(49, 76, 95, 110));
+        coords[2].push(...this.col(42, 92));
         coords[4].push(...this.col(39));
         coords[5].push(...this.col(131));
         coords[7].push(...this.col(65));
         coords[11].push(...this.col(85));
         coords[13].push(...this.col(82));
-        coords[14].push(...this.col(61,68,102));
+        coords[14].push(...this.col(61, 68, 102));
         coords[15].push(...this.col(79));
-        coords[16].push(...this.col(32,56,98));
-        coords[18].push(...this.col(29,51));
+        coords[16].push(...this.col(32, 56, 98));
+        coords[18].push(...this.col(29, 51));
         coords[19].push(...this.col(76));
         coords[20].push(...this.col(41));
 
         this.createSprites(coords, "textures", "beach_corner_northwest_edge_north", 2, -1, true);
     }
-    createBeachCornerNorthWestCenterSprites(){
+    createBeachCornerNorthWestCenterSprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(48,75,94,109));
-        coords[2].push(...this.col(41,91));
+        coords[0].push(...this.col(48, 75, 94, 109));
+        coords[2].push(...this.col(41, 91));
         coords[4].push(...this.col(38));
         coords[5].push(...this.col(130));
         coords[7].push(...this.col(64));
         coords[11].push(...this.col(84));
         coords[13].push(...this.col(81));
-        coords[14].push(...this.col(60,67,101));
+        coords[14].push(...this.col(60, 67, 101));
         coords[15].push(...this.col(78));
-        coords[16].push(...this.col(31,55,97));
-        coords[18].push(...this.col(28,50));
+        coords[16].push(...this.col(31, 55, 97));
+        coords[18].push(...this.col(28, 50));
         coords[19].push(...this.col(75));
         coords[20].push(...this.col(40));
 
         this.createSprites(coords, "textures", "beach_corner_northwest_center", 2, -1, true);
     }
-    createBeachCornerNorthWestEdgeWestFirstSprites(){
+    createBeachCornerNorthWestEdgeWestFirstSprites() {
         const coords = this.getCoords();
 
-        coords[1].push(...this.col(48,75,94,109));
-        coords[3].push(...this.col(41,91));
+        coords[1].push(...this.col(48, 75, 94, 109));
+        coords[3].push(...this.col(41, 91));
         coords[5].push(...this.col(38));
         coords[6].push(...this.col(130));
         coords[8].push(...this.col(64));
         coords[12].push(...this.col(84));
         coords[14].push(...this.col(81));
-        coords[15].push(...this.col(60,67,101));
+        coords[15].push(...this.col(60, 67, 101));
         coords[16].push(...this.col(78));
-        coords[17].push(...this.col(31,55,97));
-        coords[19].push(...this.col(28,50));
+        coords[17].push(...this.col(31, 55, 97));
+        coords[19].push(...this.col(28, 50));
         coords[20].push(...this.col(75));
         coords[21].push(...this.col(40));
 
         this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_first", 2, -1, true);
     }
-    createBeachCornerNorthWestEdgeWestSecondSprites(){
+    createBeachCornerNorthWestEdgeWestSecondSprites() {
         const coords = this.getCoords();
 
-        coords[1].push(...this.col(47,74,93,108));
-        coords[3].push(...this.col(40,90));
+        coords[1].push(...this.col(47, 74, 93, 108));
+        coords[3].push(...this.col(40, 90));
         coords[5].push(...this.col(37));
         coords[6].push(...this.col(129));
         coords[8].push(...this.col(63));
         coords[12].push(...this.col(83));
         coords[14].push(...this.col(80));
-        coords[15].push(...this.col(59,66,100));
+        coords[15].push(...this.col(59, 66, 100));
         coords[16].push(...this.col(77));
-        coords[17].push(...this.col(30,54,96));
-        coords[19].push(...this.col(27,49));
+        coords[17].push(...this.col(30, 54, 96));
+        coords[19].push(...this.col(27, 49));
         coords[20].push(...this.col(74));
         coords[21].push(...this.col(39));
 
         this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_second", 2, -1, true);
     }
 
-    createBeachCornerSouthEastEdgeEastFirstSprites(){
+    createBeachCornerSouthEastEdgeEastFirstSprites() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(86));
         coords[5].push(...this.col(121));
-        coords[7].push(...this.col(61,81,133));
-        coords[9].push(...this.col(101,107,117));
-        coords[10].push(...this.col(68,76));
+        coords[7].push(...this.col(61, 81, 133));
+        coords[9].push(...this.col(101, 107, 117));
+        coords[10].push(...this.col(68, 76));
         coords[12].push(...this.col(50));
         coords[16].push(...this.col(124));
         coords[18].push(...this.col(36));
         coords[21].push(...this.col(34));
-        coords[22].push(...this.col(43,61,72,92,115));
+        coords[22].push(...this.col(43, 61, 72, 92, 115));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_first", 2, -1, true);
     }
-    createBeachCornerSouthEastEdgeEastSecondSprites(){
+    createBeachCornerSouthEastEdgeEastSecondSprites() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(87));
         coords[5].push(...this.col(122));
-        coords[7].push(...this.col(62,82,134));
-        coords[9].push(...this.col(102,108,118));
-        coords[10].push(...this.col(69,77));
+        coords[7].push(...this.col(62, 82, 134));
+        coords[9].push(...this.col(102, 108, 118));
+        coords[10].push(...this.col(69, 77));
         coords[12].push(...this.col(51));
         coords[16].push(...this.col(125));
         coords[18].push(...this.col(37));
         coords[21].push(...this.col(35));
-        coords[22].push(...this.col(44,62,73,93,116));
+        coords[22].push(...this.col(44, 62, 73, 93, 116));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_second", 2, -1, true);
     }
-    createBeachCornerSouthEastEdgeSouthFirstSprites(){
+    createBeachCornerSouthEastEdgeSouthFirstSprites() {
         const coords = this.getCoords();
 
         coords[5].push(...this.col(85));
         coords[6].push(...this.col(120));
-        coords[8].push(...this.col(60,80,132));
-        coords[10].push(...this.col(55,100,106,116));
-        coords[11].push(...this.col(67,75));
+        coords[8].push(...this.col(60, 80, 132));
+        coords[10].push(...this.col(55, 100, 106, 116));
+        coords[11].push(...this.col(67, 75));
         coords[13].push(...this.col(49));
         coords[17].push(...this.col(123));
-        coords[19].push(...this.col(35,118));
+        coords[19].push(...this.col(35, 118));
         coords[22].push(...this.col(33));
-        coords[23].push(...this.col(42,60,71,91,114));
+        coords[23].push(...this.col(42, 60, 71, 91, 114));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_first", 2, -1, true);
     }
-    createBeachCornerSouthEastCenterSprites(){
+    createBeachCornerSouthEastCenterSprites() {
         const coords = this.getCoords();
 
         coords[5].push(...this.col(86));
         coords[6].push(...this.col(121));
-        coords[8].push(...this.col(61,81,133));
-        coords[10].push(...this.col(56,101,107,117));
-        coords[11].push(...this.col(68,76));
+        coords[8].push(...this.col(61, 81, 133));
+        coords[10].push(...this.col(56, 101, 107, 117));
+        coords[11].push(...this.col(68, 76));
         coords[13].push(...this.col(50));
         coords[17].push(...this.col(124));
-        coords[19].push(...this.col(36,119));
+        coords[19].push(...this.col(36, 119));
         coords[22].push(...this.col(34));
-        coords[23].push(...this.col(43,61,72,92,115));
+        coords[23].push(...this.col(43, 61, 72, 92, 115));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_center", 2, -1, true);
     }
-    createBeachCornerSouthEastEastSprites(){
+    createBeachCornerSouthEastEastSprites() {
         const coords = this.getCoords();
 
         coords[5].push(...this.col(87));
         coords[6].push(...this.col(122));
-        coords[8].push(...this.col(62,82,134));
-        coords[10].push(...this.col(57,102,108,118));
-        coords[11].push(...this.col(69,77));
+        coords[8].push(...this.col(62, 82, 134));
+        coords[10].push(...this.col(57, 102, 108, 118));
+        coords[11].push(...this.col(69, 77));
         coords[13].push(...this.col(51));
         coords[17].push(...this.col(125));
-        coords[19].push(...this.col(37,120));
+        coords[19].push(...this.col(37, 120));
         coords[22].push(...this.col(35));
-        coords[23].push(...this.col(44,62,73,93,116));
+        coords[23].push(...this.col(44, 62, 73, 93, 116));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_east", 2, -1, true);
     }
-    createBeachCornerSouthEastEdgeSouthSecondSprites(){
+    createBeachCornerSouthEastEdgeSouthSecondSprites() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(85));
         coords[7].push(...this.col(120));
-        coords[9].push(...this.col(60,80,132));
-        coords[11].push(...this.col(55,100,106,116));
-        coords[12].push(...this.col(67,75));
+        coords[9].push(...this.col(60, 80, 132));
+        coords[11].push(...this.col(55, 100, 106, 116));
+        coords[12].push(...this.col(67, 75));
         coords[14].push(...this.col(49));
         coords[18].push(...this.col(123));
-        coords[20].push(...this.col(35,118));
+        coords[20].push(...this.col(35, 118));
         coords[23].push(...this.col(33));
-        coords[24].push(...this.col(42,60,71,91,114));
+        coords[24].push(...this.col(42, 60, 71, 91, 114));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_second", 2, -1, true);
     }
-    createBeachCornerSouthEastSouthSprites(){
+    createBeachCornerSouthEastSouthSprites() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(86));
         coords[7].push(...this.col(121));
-        coords[9].push(...this.col(61,81,133));
-        coords[11].push(...this.col(56,101,107,117));
-        coords[12].push(...this.col(68,76));
+        coords[9].push(...this.col(61, 81, 133));
+        coords[11].push(...this.col(56, 101, 107, 117));
+        coords[12].push(...this.col(68, 76));
         coords[14].push(...this.col(50));
         coords[18].push(...this.col(124));
-        coords[20].push(...this.col(36,119));
+        coords[20].push(...this.col(36, 119));
         coords[23].push(...this.col(34));
-        coords[24].push(...this.col(43,61,72,92,115));
+        coords[24].push(...this.col(43, 61, 72, 92, 115));
 
         this.createSprites(coords, "textures", "beach_corner_southeast_south", 2, -1, true);
     }
 
-    createBeachCornerSouthWestEdgeWestFirstSprites(){
+    createBeachCornerSouthWestEdgeWestFirstSprites() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(91));
-        coords[7].push(...this.col(71,130));
-        coords[9].push(...this.col(94,104,110));
-        coords[10].push(...this.col(38,64,73));
+        coords[7].push(...this.col(71, 130));
+        coords[9].push(...this.col(94, 104, 110));
+        coords[10].push(...this.col(38, 64, 73));
         coords[20].push(...this.col(50));
         coords[21].push(...this.col(28));
-        coords[22].push(...this.col(40,64,75,97));
+        coords[22].push(...this.col(40, 64, 75, 97));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_first", 2, -1, true);
     }
-    createBeachCornerSouthWestEdgeWestSecondSprites(){
+    createBeachCornerSouthWestEdgeWestSecondSprites() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(90));
-        coords[7].push(...this.col(70,129));
-        coords[9].push(...this.col(93,103,109));
-        coords[10].push(...this.col(37,63,72));
+        coords[7].push(...this.col(70, 129));
+        coords[9].push(...this.col(93, 103, 109));
+        coords[10].push(...this.col(37, 63, 72));
         coords[20].push(...this.col(49));
         coords[21].push(...this.col(27));
-        coords[22].push(...this.col(39,63,74,96));
+        coords[22].push(...this.col(39, 63, 74, 96));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_second", 2, -1, true);
     }
-    createBeachCornerSouthWestEdgeSouthFirstSprites(){
+    createBeachCornerSouthWestEdgeSouthFirstSprites() {
         const coords = this.getCoords();
 
         coords[7].push(...this.col(92));
-        coords[8].push(...this.col(72,131));
-        coords[10].push(...this.col(95,105,111));
-        coords[11].push(...this.col(39,65,74));
+        coords[8].push(...this.col(72, 131));
+        coords[10].push(...this.col(95, 105, 111));
+        coords[11].push(...this.col(39, 65, 74));
         coords[13].push(...this.col(44));
         coords[21].push(...this.col(51));
         coords[22].push(...this.col(29));
-        coords[23].push(...this.col(41,56,65,76,98));
+        coords[23].push(...this.col(41, 56, 65, 76, 98));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_first", 2, -1, true);
     }
-    createBeachCornerSouthWestCenterSprites(){
+    createBeachCornerSouthWestCenterSprites() {
         const coords = this.getCoords();
 
         coords[7].push(...this.col(91));
-        coords[8].push(...this.col(71,130));
-        coords[10].push(...this.col(94,104,110));
-        coords[11].push(...this.col(38,64,73));
+        coords[8].push(...this.col(71, 130));
+        coords[10].push(...this.col(94, 104, 110));
+        coords[11].push(...this.col(38, 64, 73));
         coords[13].push(...this.col(43));
         coords[21].push(...this.col(50));
         coords[22].push(...this.col(28));
-        coords[23].push(...this.col(40,55,64,75,97));
+        coords[23].push(...this.col(40, 55, 64, 75, 97));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_center", 2, -1, true);
     }
-    createBeachCornerSouthWestWestSprites(){
+    createBeachCornerSouthWestWestSprites() {
         const coords = this.getCoords();
 
         coords[7].push(...this.col(90));
-        coords[8].push(...this.col(70,129));
-        coords[10].push(...this.col(93,103,109));
-        coords[11].push(...this.col(37,63,72));
+        coords[8].push(...this.col(70, 129));
+        coords[10].push(...this.col(93, 103, 109));
+        coords[11].push(...this.col(37, 63, 72));
         coords[13].push(...this.col(42));
         coords[21].push(...this.col(49));
         coords[22].push(...this.col(27));
-        coords[23].push(...this.col(39,54,63,74,96));
+        coords[23].push(...this.col(39, 54, 63, 74, 96));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_west", 2, -1, true);
     }
-    createBeachCornerSouthWestEdgeSouthSecondSprites(){
+    createBeachCornerSouthWestEdgeSouthSecondSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(92));
         coords[9].push(...this.col(131));
-        coords[11].push(...this.col(95,105,111));
-        coords[12].push(...this.col(39,65,74));
+        coords[11].push(...this.col(95, 105, 111));
+        coords[12].push(...this.col(39, 65, 74));
         coords[14].push(...this.col(44));
         coords[22].push(...this.col(51));
         coords[23].push(...this.col(29));
-        coords[24].push(...this.col(41,56,65,76,98));
+        coords[24].push(...this.col(41, 56, 65, 76, 98));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_second", 2, -1, true);
     }
-    createBeachCornerSouthWestSouthSprites(){
+    createBeachCornerSouthWestSouthSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(91));
         coords[9].push(...this.col(130));
-        coords[11].push(...this.col(94,104,110));
-        coords[12].push(...this.col(38,64,73));
+        coords[11].push(...this.col(94, 104, 110));
+        coords[12].push(...this.col(38, 64, 73));
         coords[14].push(...this.col(43));
         coords[22].push(...this.col(50));
         coords[23].push(...this.col(28));
-        coords[24].push(...this.col(40,55,64,75,97));
+        coords[24].push(...this.col(40, 55, 64, 75, 97));
 
         this.createSprites(coords, "textures", "beach_corner_southwest_south", 2, -1, true);
     }
 
-
-
-
-
-    createGrassCenterImages(){
+    createGrassCenterImages() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(...this.stripe(50,62),77,96,97,...this.stripe(111,116)));
-        coords[3].push(...this.col(...this.stripe(49,63),...this.stripe(76,78),95,96,...this.stripe(111,116)));
-        coords[4].push(...this.col(...this.stripe(43,60),...this.stripe(72,80),...this.stripe(93,95),...this.stripe(110,117)));
-        coords[5].push(...this.col(...this.stripe(42,59),...this.stripe(73,79),...this.stripe(93,95),...this.stripe(100,116)));
-        coords[6].push(...this.col(...this.stripe(40,59),...this.stripe(73,79),95,100,105,106,...this.stripe(111,115)));
-        coords[7].push(...this.col(...this.stripe(40,55),74,75,96,...this.stripe(112,115)));
-        coords[8].push(...this.col(...this.stripe(40,54),...this.stripe(96,99),...this.stripe(112,115)));
-        coords[9].push(...this.col(...this.stripe(40,49),66));
-        coords[10].push(...this.col(...this.stripe(44,48)));
-        coords[11].push(...this.col(...this.stripe(45,48)));
+        coords[2].push(...this.col(...this.stripe(50, 62), 77, 96, 97, ...this.stripe(111, 116)));
+        coords[3].push(...this.col(...this.stripe(49, 63), ...this.stripe(76, 78), 95, 96, ...this.stripe(111, 116)));
+        coords[4].push(...this.col(...this.stripe(43, 60), ...this.stripe(72, 80), ...this.stripe(93, 95), ...this.stripe(110, 117)));
+        coords[5].push(...this.col(...this.stripe(42, 59), ...this.stripe(73, 79), ...this.stripe(93, 95), ...this.stripe(100, 116)));
+        coords[6].push(...this.col(...this.stripe(40, 59), ...this.stripe(73, 79), 95, 100, 105, 106, ...this.stripe(111, 115)));
+        coords[7].push(...this.col(...this.stripe(40, 55), 74, 75, 96, ...this.stripe(112, 115)));
+        coords[8].push(...this.col(...this.stripe(40, 54), ...this.stripe(96, 99), ...this.stripe(112, 115)));
+        coords[9].push(...this.col(...this.stripe(40, 49), 66));
+        coords[10].push(...this.col(...this.stripe(44, 48)));
+        coords[11].push(...this.col(...this.stripe(45, 48)));
         coords[13].push(...this.col(86));
-        coords[14].push(...this.col(...this.stripe(85,87)));
-        coords[15].push(...this.col(...this.stripe(83,89)));
-        coords[16].push(...this.col(62,...this.stripe(82,89),...this.stripe(103,118)));
-        coords[17].push(...this.col(61,62,80,...this.stripe(84,91),...this.stripe(102,117)));
-        coords[18].push(...this.col(33,...this.stripe(57,63),68,69,...this.stripe(85,91),...this.stripe(99,114)));
-        coords[19].push(...this.col(32,...this.stripe(56,60),...this.stripe(65,70),...this.stripe(85,91),...this.stripe(98,113)));
-        coords[20].push(...this.col(...this.stripe(30,32),...this.stripe(56,59),...this.stripe(66,70),79,...this.stripe(85,90),...this.stripe(99,113)));
-        coords[21].push(...this.col(...this.stripe(57,59),...this.stripe(66,70),...this.stripe(77,79),...this.stripe(85,90),...this.stripe(99,113)));
+        coords[14].push(...this.col(...this.stripe(85, 87)));
+        coords[15].push(...this.col(...this.stripe(83, 89)));
+        coords[16].push(...this.col(62, ...this.stripe(82, 89), ...this.stripe(103, 118)));
+        coords[17].push(...this.col(61, 62, 80, ...this.stripe(84, 91), ...this.stripe(102, 117)));
+        coords[18].push(...this.col(33, ...this.stripe(57, 63), 68, 69, ...this.stripe(85, 91), ...this.stripe(99, 114)));
+        coords[19].push(...this.col(32, ...this.stripe(56, 60), ...this.stripe(65, 70), ...this.stripe(85, 91), ...this.stripe(98, 113)));
+        coords[20].push(...this.col(...this.stripe(30, 32), ...this.stripe(56, 59), ...this.stripe(66, 70), 79, ...this.stripe(85, 90), ...this.stripe(99, 113)));
+        coords[21].push(...this.col(...this.stripe(57, 59), ...this.stripe(66, 70), ...this.stripe(77, 79), ...this.stripe(85, 90), ...this.stripe(99, 113)));
 
-        this.createImages(coords,"textures", "grass_center");
+        this.createImages(coords, "textures", "grass_center");
     }
-    createGrassCornerNorthEastImages(){
+
+    createGrassCornerNorthEastImages() {
         const coords = this.getCoords();
 
         coords[1].push(...this.col(63, 78, 98, 117));
@@ -967,9 +1056,9 @@ export default class    MapScene extends Scene {
         coords[18].push(...this.col(71));
         coords[21].push(...this.col(42));
 
-        this.createImages(coords,"textures", "grass_corner_northeast");
+        this.createImages(coords, "textures", "grass_corner_northeast");
     }
-    createGrassCornerNorthWestImages(){
+    createGrassCornerNorthWestImages() {
         const coords = this.getCoords();
 
         coords[1].push(...this.col(49, 76, 95, 110));
@@ -986,9 +1075,9 @@ export default class    MapScene extends Scene {
         coords[20].push(...this.col(76));
         coords[21].push(...this.col(41));
 
-        this.createImages(coords,"textures", "grass_corner_northwest");
+        this.createImages(coords, "textures", "grass_corner_northwest");
     }
-    createGrassCornerSouthEastImages(){
+    createGrassCornerSouthEastImages() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(85));
@@ -1002,9 +1091,9 @@ export default class    MapScene extends Scene {
         coords[21].push(...this.col(33));
         coords[22].push(...this.col(42, 60, 71, 91, 114));
 
-        this.createImages(coords,"textures", "grass_corner_southeast");
+        this.createImages(coords, "textures", "grass_corner_southeast");
     }
-    createGrassCornerSouthWestImages(){
+    createGrassCornerSouthWestImages() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(92));
@@ -1016,10 +1105,10 @@ export default class    MapScene extends Scene {
         coords[21].push(...this.col(29));
         coords[22].push(...this.col(41, 56, 65, 76, 98));
 
-        this.createImages(coords,"textures", "grass_corner_southwest");
+        this.createImages(coords, "textures", "grass_corner_southwest");
     }
 
-    createGrassEdgeEastAImages(){
+    createGrassEdgeEastAImages() {
         const coords = this.getCoords();
 
         coords[2].push(...this.col(63, 78, 98, 117));
@@ -1037,9 +1126,9 @@ export default class    MapScene extends Scene {
         coords[20].push(...this.col(60, 80));
         coords[21].push(...this.col(71, 91, 114));
 
-        this.createImages(coords,"textures", "grass_edge_east_a");
+        this.createImages(coords, "textures", "grass_edge_east_a");
     }
-    createGrassEdgeEastBImages(){
+    createGrassEdgeEastBImages() {
         const coords = this.getCoords();
 
         coords[3].push(...this.col(98, 117));
@@ -1053,9 +1142,9 @@ export default class    MapScene extends Scene {
         coords[20].push(...this.col(33, 71, 91, 114));
         coords[21].push(...this.col(60, 80));
 
-        this.createImages(coords,"textures", "grass_edge_east_b");
+        this.createImages(coords, "textures", "grass_edge_east_b");
     }
-    createGrassEdgeNorthAImages(){
+    createGrassEdgeNorthAImages() {
         const coords = this.getCoords();
 
         coords[1].push(...this.col(50, 52, 54, 56, 58, 60, 62, 77, 96, 111, 113, 115));
@@ -1073,9 +1162,9 @@ export default class    MapScene extends Scene {
         coords[19].push(...this.col(30, 52, 54));
         coords[20].push(...this.col(77));
 
-        this.createImages(coords,"textures", "grass_edge_north_a");
+        this.createImages(coords, "textures", "grass_edge_north_a");
     }
-    createGrassEdgeNorthBImages(){
+    createGrassEdgeNorthBImages() {
         const coords = this.getCoords();
 
         coords[1].push(...this.col(51, 53, 55, 57, 59, 61, 97, 112, 114, 116));
@@ -1091,9 +1180,9 @@ export default class    MapScene extends Scene {
         coords[19].push(...this.col(31, 53, 55));
         coords[20].push(...this.col(78));
 
-        this.createImages(coords,"textures", "grass_edge_north_b");
+        this.createImages(coords, "textures", "grass_edge_north_b");
     }
-    createGrassEdgeSouthAImages(){
+    createGrassEdgeSouthAImages() {
         const coords = this.getCoords();
 
         coords[3].push(...this.col(97));
@@ -1112,9 +1201,9 @@ export default class    MapScene extends Scene {
         coords[21].push(...this.col(30, 32));
         coords[22].push(...this.col(57, 59, 66, 68, 70, 77, 79, 81, 83, 85, 87, 89, 99, 101, 103, 105, 107, 109, 111, 113));
 
-        this.createImages(coords,"textures", "grass_edge_south_a");
+        this.createImages(coords, "textures", "grass_edge_south_a");
     }
-    createGrassEdgeSouthBImages(){
+    createGrassEdgeSouthBImages() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(62, 64, 66, 68, 70, 82, 84));
@@ -1132,9 +1221,9 @@ export default class    MapScene extends Scene {
         coords[21].push(...this.col(31));
         coords[22].push(...this.col(58, 67, 69, 78, 80, 82, 84, 86, 88, 90, 100, 102, 104, 106, 108, 110, 112));
 
-        this.createImages(coords,"textures", "grass_edge_south_b");
+        this.createImages(coords, "textures", "grass_edge_south_b");
     }
-    createGrassEdgeWestAImages(){
+    createGrassEdgeWestAImages() {
         const coords = this.getCoords();
 
         coords[2].push(...this.col(49, 76, 95, 110));
@@ -1153,9 +1242,9 @@ export default class    MapScene extends Scene {
         coords[20].push(...this.col(29, 65, 84));
         coords[21].push(...this.col(56, 76, 98));
 
-        this.createImages(coords,"textures", "grass_edge_west_a");
+        this.createImages(coords, "textures", "grass_edge_west_a");
     }
-    createGrassEdgeWestBImages(){
+    createGrassEdgeWestBImages() {
         const coords = this.getCoords();
 
         coords[3].push(...this.col(110));
@@ -1169,44 +1258,41 @@ export default class    MapScene extends Scene {
         coords[20].push(...this.col(98));
         coords[21].push(...this.col(65, 84));
 
-        this.createImages(coords,"textures", "grass_edge_west_b");
+        this.createImages(coords, "textures", "grass_edge_west_b");
     }
-
-
 
     createDeepOceanCenterImages() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(...this.stripe(0,38),...this.stripe(103,105),...this.stripe(122,159)));
-        coords[1].push(...this.col(...this.stripe(0,37),...this.stripe(124,159)));
-        coords[2].push(...this.col(...this.stripe(0,35),...this.stripe(125,159)));
-        coords[3].push(...this.col(...this.stripe(0,34),...this.stripe(125,127),...this.stripe(136,159)));
-        coords[4].push(...this.col(...this.stripe(0,34),125,126,...this.stripe(137,159)));
-        coords[5].push(...this.col(...this.stripe(0,34),125,126,...this.stripe(137,159)));
-        coords[6].push(...this.col(...this.stripe(0,34),125,126,...this.stripe(137,159)));
-        coords[7].push(...this.col(...this.stripe(0,34),125,126,...this.stripe(137,159)));
-        coords[8].push(...this.col(...this.stripe(0,34),125,126,...this.stripe(137,159)));
-        coords[9].push(...this.col(...this.stripe(0,34),...this.stripe(124,127),...this.stripe(137,159)));
-        coords[10].push(...this.col(...this.stripe(0,34),...this.stripe(121,127),...this.stripe(137,159)));
-        coords[11].push(...this.col(...this.stripe(0,34),...this.stripe(121,127),...this.stripe(136,159)));
-        coords[12].push(...this.col(...this.stripe(0,34),...this.stripe(127,159)));
-        coords[13].push(...this.col(...this.stripe(0,34),...this.stripe(128,159)));
-        coords[14].push(...this.col(...this.stripe(0,28),...this.stripe(128,159)));
-        coords[15].push(...this.col(...this.stripe(0,27),...this.stripe(128,159)));
-        coords[16].push(...this.col(...this.stripe(0,25),...this.stripe(128,159)));
-        coords[17].push(...this.col(...this.stripe(0,24),...this.stripe(40,46),...this.stripe(128,159)));
-        coords[18].push(...this.col(...this.stripe(0,24),46,...this.stripe(128,159)));
-        coords[19].push(...this.col(...this.stripe(0,24),...this.stripe(128,159)));
-        coords[20].push(...this.col(...this.stripe(0,24),...this.stripe(127,159)));
-        coords[21].push(...this.col(...this.stripe(0,24),...this.stripe(123,159)));
-        coords[22].push(...this.col(...this.stripe(0,24),...this.stripe(122,159)));
-        coords[23].push(...this.col(...this.stripe(0,24),...this.stripe(119,159)));
-        coords[24].push(...this.col(...this.stripe(0,24),47,...this.stripe(119,159)));
+        coords[0].push(...this.col(...this.stripe(0, 38), ...this.stripe(103, 105), ...this.stripe(122, 159)));
+        coords[1].push(...this.col(...this.stripe(0, 37), ...this.stripe(124, 159)));
+        coords[2].push(...this.col(...this.stripe(0, 35), ...this.stripe(125, 159)));
+        coords[3].push(...this.col(...this.stripe(0, 34), ...this.stripe(125, 127), ...this.stripe(136, 159)));
+        coords[4].push(...this.col(...this.stripe(0, 34), 125, 126, ...this.stripe(137, 159)));
+        coords[5].push(...this.col(...this.stripe(0, 34), 125, 126, ...this.stripe(137, 159)));
+        coords[6].push(...this.col(...this.stripe(0, 34), 125, 126, ...this.stripe(137, 159)));
+        coords[7].push(...this.col(...this.stripe(0, 34), 125, 126, ...this.stripe(137, 159)));
+        coords[8].push(...this.col(...this.stripe(0, 34), 125, 126, ...this.stripe(137, 159)));
+        coords[9].push(...this.col(...this.stripe(0, 34), ...this.stripe(124, 127), ...this.stripe(137, 159)));
+        coords[10].push(...this.col(...this.stripe(0, 34), ...this.stripe(121, 127), ...this.stripe(137, 159)));
+        coords[11].push(...this.col(...this.stripe(0, 34), ...this.stripe(121, 127), ...this.stripe(136, 159)));
+        coords[12].push(...this.col(...this.stripe(0, 34), ...this.stripe(127, 159)));
+        coords[13].push(...this.col(...this.stripe(0, 34), ...this.stripe(128, 159)));
+        coords[14].push(...this.col(...this.stripe(0, 28), ...this.stripe(128, 159)));
+        coords[15].push(...this.col(...this.stripe(0, 27), ...this.stripe(128, 159)));
+        coords[16].push(...this.col(...this.stripe(0, 25), ...this.stripe(128, 159)));
+        coords[17].push(...this.col(...this.stripe(0, 24), ...this.stripe(40, 46), ...this.stripe(128, 159)));
+        coords[18].push(...this.col(...this.stripe(0, 24), 46, ...this.stripe(128, 159)));
+        coords[19].push(...this.col(...this.stripe(0, 24), ...this.stripe(128, 159)));
+        coords[20].push(...this.col(...this.stripe(0, 24), ...this.stripe(127, 159)));
+        coords[21].push(...this.col(...this.stripe(0, 24), ...this.stripe(123, 159)));
+        coords[22].push(...this.col(...this.stripe(0, 24), ...this.stripe(122, 159)));
+        coords[23].push(...this.col(...this.stripe(0, 24), ...this.stripe(119, 159)));
+        coords[24].push(...this.col(...this.stripe(0, 24), 47, ...this.stripe(119, 159)));
 
-        this.createImages(coords,"textures", "deep_ocean_center");
+        this.createImages(coords, "textures", "deep_ocean_center");
     }
-
-    createDeepOceanCornerInnerNorthEastSprites(){
+    createDeepOceanCornerInnerNorthEastSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(88));
@@ -1221,7 +1307,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_inner_northeast", 2, -1, true);
     }
-    createDeepOceanCornerInnerNorthWestSprites(){
+    createDeepOceanCornerInnerNorthWestSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(39, 89));
@@ -1236,7 +1322,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_inner_northwest", 2, -1, true);
     }
-    createDeepOceanCornerInnerSouthEastSprites(){
+    createDeepOceanCornerInnerSouthEastSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(124));
@@ -1250,7 +1336,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_inner_southeast", 2, -1, true);
     }
-    createDeepOceanCornerInnerSouthWestSprites(){
+    createDeepOceanCornerInnerSouthWestSprites() {
         const coords = this.getCoords();
 
         coords[11].push(...this.col(128));
@@ -1261,8 +1347,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_inner_southwest", 2, -1, true);
     }
-
-    createDeepOceanCornerNorthEastSprites(){
+    createDeepOceanCornerNorthEastSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(88));
@@ -1277,7 +1362,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_northeast", 2, -1, true);
     }
-    createDeepOceanCornerNorthWestSprites(){
+    createDeepOceanCornerNorthWestSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(84, 123));
@@ -1295,7 +1380,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_northwest", 2, -1, true);
     }
-    createDeepOceanCornerSouthEastSprites(){
+    createDeepOceanCornerSouthEastSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(45, 72, 91));
@@ -1312,7 +1397,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_southeast", 2, -1, true);
     }
-    createDeepOceanCornerSouthWestSprites(){
+    createDeepOceanCornerSouthWestSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(67, 82));
@@ -1329,8 +1414,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_corner_southwest", 2, -1, true);
     }
-
-    createDeepOceanEdgeEastSprites(){
+    createDeepOceanEdgeEastSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(106));
@@ -1353,7 +1437,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_edge_east", 2, -1, true);
     }
-    createDeepOceanEdgeNorthSprites(){
+    createDeepOceanEdgeNorthSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(85, 86, 87));
@@ -1367,7 +1451,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_edge_north", 2, -1, true);
     }
-    createDeepOceanEdgeSouthSprites(){
+    createDeepOceanEdgeSouthSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(40, 41, 42, 43, 44, 68, 69, 70, 71, 83, 84, 85, 86, 87, 90));
@@ -1382,7 +1466,7 @@ export default class    MapScene extends Scene {
 
         this.createSprites(coords, "textures", "deep_ocean_edge_south", 2, -1, true);
     }
-    createDeepOceanEdgeWestSprites(){
+    createDeepOceanEdgeWestSprites() {
         const coords = this.getCoords();
 
         coords[0].push(...this.col(102, 121));
@@ -1410,30 +1494,30 @@ export default class    MapScene extends Scene {
     }
 
 
-    getCoords(){
+    getCoords() {
         const coords = new Array(25);
 
-        for(let i = 0; i < coords.length; i++){
+        for (let i = 0; i < coords.length; i++) {
             coords[i] = new Array();
         }
 
         return coords;
     }
 
-    stripe(initial, end){
+    stripe(initial, end) {
         let numbers = new Array();
-        for(let i = initial; i <= end; i++){
+        for (let i = initial; i <= end; i++) {
             numbers.push(i);
         }
         return numbers;
     }
 
-    col(...cols){
+    col(...cols) {
         return cols.map(y => y * 16);
     }
 
 
-    createImages(coords,texture, frame){
+    createImages(coords, texture, frame) {
         coords.forEach((row, y) => {
             row.forEach(x => {
                 this.add.image(x, this.col(y)[0], texture, frame)
@@ -1473,6 +1557,7 @@ export default class    MapScene extends Scene {
     createInput() {
         this.cursors = this.input.keyboard.createCursorKeys();
     }
+
     addCollisions() {
         this.physics.add.collider(this.player, this.beaches);
         this.physics.add.overlap(
@@ -1490,6 +1575,7 @@ export default class    MapScene extends Scene {
             this
         );
     }
+
     enterLink(player, link) {
         this.links.getChildren()
             .filter(link => !link.active)
@@ -1501,6 +1587,7 @@ export default class    MapScene extends Scene {
         this.emit("link", link.name);
         link.setActive(false);
     }
+
     collectChest(player, chest) {
         this.goldPickupAudio.play(); // play gold pickup sound
         this.score += chest.coins; // update our score
