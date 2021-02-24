@@ -4,7 +4,7 @@ export default class Player extends Physics.Arcade.Image {
   constructor(scene, x, y, key, frame) {
     super(scene, x, y, key, frame);
     this.scene = scene; // the scene this container will be added to
-    this.velocity = 300; // the velocity when moving our player
+    this.velocity = 100; // the velocity when moving our player
     this.scene.physics.world.enable(this); // enable physics
     this.setImmovable(false); // set immovable if another object collides with our player
     this.body.setCollideWorldBounds(true); // collide with world bounds
@@ -31,7 +31,7 @@ export default class Player extends Physics.Arcade.Image {
     if (shift.isDown) {
       this.velocity = 1000;
     } else {
-      this.velocity = 300;
+      this.velocity = 100;
       this.setScale(0.9);
     }
   }

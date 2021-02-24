@@ -1,7 +1,7 @@
 import { AUTO, Scale, Game } from 'phaser';
 import BootScene from './scenes/BootScene';
 import MapScene from './scenes/MapScene';
-import UiScene from './scenes/UiScene';
+
 
 export default function createMap(emit){
     const config = {
@@ -20,6 +20,7 @@ export default function createMap(emit){
                 height: 400
             }
         },
+        pixelArt: true,
         scene: [BootScene, new MapScene(emit)],
         physics: {
             default: "arcade",

@@ -1,9 +1,7 @@
-import {Scene, Game} from 'phaser';
+import {Scene} from 'phaser';
 import Chest from '@/phaser/classes/Chest';
 import Player from '@/phaser/classes/Player';
 import Link from "@/phaser/classes/Link";
-import Image from "@/phaser/classes/Image.js";
-import Sprite from "@/phaser/classes/Sprite";
 
 export default class MapScene extends Scene {
     constructor(emit) {
@@ -33,6 +31,8 @@ export default class MapScene extends Scene {
         this.addCollisions();
         this.createInput();
 
+
+        this.cameras.main.setZoom(1);
         this.cameras.main.setBounds(0, 0, 2560, 400);
         this.physics.world.setBounds(0, 0, 2560, 400);
         this.cameras.main.startFollow(this.player, true);
@@ -171,17 +171,6 @@ export default class MapScene extends Scene {
             }
         }
 
-        function createCornersGrasses(scene) {
-            const {grasses, maxPositionX, maxPositionY} = scene;
-
-            grasses.addMultiple([
-                grasses.create(32, 16, "textures", "terrain_grass_north_west.png"),
-                grasses.create(maxPositionX - 32, 16, "textures", "terrain_grass_north_east.png"),
-                grasses.create(32, maxPositionY - 32, "textures", "terrain_grass_south_west.png"),
-                grasses.create(maxPositionX - 32, maxPositionY - 32, "textures", "terrain_grass_south_east.png")
-            ]);
-        }
-
     }
 
     createMap() {
@@ -192,12 +181,24 @@ export default class MapScene extends Scene {
         this.createLagoonTiles();
     }
 
-    createLagoonTiles(){
+    createLagoonTiles() {
         this.createLagoonCornerNorthWestImages();
         this.createLagoonCornerNorthEastImages();
+        this.createLagoonCornerSouthWestImages();
+        this.createLagoonCornerSouthEastImages();
+
+        this.createLagoonEdgeWestImages();
+        this.createLagoonEdgeEastImages();
+        this.createLagoonEdgeNorthImages();
+        this.createLagoonEdgeSouthImages();
+
+        this.createLagoonNorthImages();
+        this.createLagoonCenterImages();
+        this.createLagoonWestImages();
+        this.createLagoonEastImages();
     }
 
-    createLagoonCornerNorthWestImages(){
+    createLagoonCornerNorthWestImages() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(97));
@@ -206,7 +207,7 @@ export default class MapScene extends Scene {
         this.createImages(coords, "textures", "lagoon_corner_northwest");
     }
 
-    createLagoonCornerNorthEastImages(){
+    createLagoonCornerNorthEastImages() {
         const coords = this.getCoords();
 
         coords[4].push(...this.col(99));
@@ -214,6 +215,96 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "lagoon_corner_northeast");
     }
+
+    createLagoonCornerSouthWestImages() {
+        const coords = this.getCoords();
+
+        coords[6].push(...this.col(97));
+        coords[21].push(...this.col(81));
+
+
+        this.createImages(coords, "textures", "lagoon_corner_southwest");
+    }
+
+    createLagoonCornerSouthEastImages() {
+        const coords = this.getCoords();
+
+        coords[6].push(...this.col(99));
+        coords[21].push(...this.col(83));
+
+        this.createImages(coords, "textures", "lagoon_corner_southeast");
+    }
+
+    createLagoonEdgeWestImages() {
+        const coords = this.getCoords();
+
+        coords[5].push(...this.col(97));
+        coords[19].push(...this.col(81));
+
+        this.createImages(coords, "textures", "lagoon_edge_west");
+    }
+
+    createLagoonEdgeEastImages() {
+        const coords = this.getCoords();
+
+        coords[5].push(...this.col(99));
+        coords[19].push(...this.col(83));
+
+
+        this.createImages(coords, "textures", "lagoon_edge_east");
+    }
+
+    createLagoonEdgeNorthImages() {
+        const coords = this.getCoords();
+
+        coords[4].push(...this.col(98));
+        coords[18].push(...this.col(82));
+
+        this.createImages(coords, "textures", "lagoon_edge_north");
+    }
+
+    createLagoonEdgeSouthImages() {
+        const coords = this.getCoords();
+
+        coords[6].push(...this.col(98));
+        coords[21].push(...this.col(82));
+
+        this.createImages(coords, "textures", "lagoon_edge_south");
+    }
+
+    createLagoonNorthImages() {
+        const coords = this.getCoords();
+
+        coords[5].push(...this.col(98));
+        coords[19].push(...this.col(82));
+
+        this.createImages(coords, "textures", "lagoon_north");
+    }
+
+    createLagoonCenterImages() {
+        const coords = this.getCoords();
+
+        coords[20].push(...this.col(82));
+
+        this.createImages(coords, "textures", "lagoon_center");
+    }
+
+    createLagoonWestImages() {
+        const coords = this.getCoords();
+
+        coords[20].push(...this.col(81));
+
+        this.createImages(coords, "textures", "lagoon_west");
+    }
+
+    createLagoonEastImages() {
+        const coords = this.getCoords();
+
+        coords[20].push(...this.col(83));
+
+        this.createImages(coords, "textures", "lagoon_east");
+    }
+
 
     createDeepOceanTiles() {
         this.createDeepOceanCenterImages();
@@ -234,43 +325,42 @@ export default class MapScene extends Scene {
         this.createDeepOceanEdgeWestSprites();
     }
 
-    createOceanTiles(){
+    createOceanTiles() {
         this.createOceanCenterImages();
     }
 
-    createOceanCenterImages(){
+    createOceanCenterImages() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(46,47,65,66,73,74,80,81,92,93,100,101,107,108,119,120));
-        coords[1].push(...this.col(...this.stripe(40, 46),...this.stripe(66, 73),...this.stripe(81, 87),90,91,92,101,107,120));
-        coords[2].push(...this.col(39,40,...this.stripe(87,90),...this.stripe(101,107),120,121,122));
-        coords[3].push(...this.col(37,38,39,88,89,122,123));
-        coords[4].push(...this.col(36,37,88,89,123,...this.stripe(129,134)));
-        coords[5].push(...this.col(36,37,88,89,123,128,129,134,135));
-        coords[6].push(...this.col(36,87,88,89,123,128,135));
-        coords[7].push(...this.col(36,63,69,...this.stripe(83,89),122,123,128,135));
-        coords[8].push(...this.col(36,83,89,90,...this.stripe(119,122),128,135));
-        coords[9].push(...this.col(36,62,70,82,83,...this.stripe(89,92),119,128,129,134,135));
-        coords[10].push(...this.col(36,...this.stripe(58,62),70,71,...this.stripe(78,92),119,...this.stripe(129,134)));
-        coords[11].push(...this.col(36,57,58,62,70,71,...this.stripe(78,83),...this.stripe(89,93),102,103,108,109,118,119));
-        coords[12].push(...this.col(36,37,...this.stripe(52,58),62,63,...this.stripe(69,72),...this.stripe(77,82),...this.stripe(90,119)));
-        coords[13].push(...this.col(...this.stripe(37,41),52,...this.stripe(58,80),92,93,...this.stripe(99,125)));
-        coords[14].push(...this.col(37,38,41,42,51,52,58,59,65,66,...this.stripe(71,79),93,99,100,125,126));
-        coords[15].push(...this.col(...this.stripe(30,38),...this.stripe(41,58),72,73,76,77,...this.stripe(93,99),126));
-        coords[16].push(...this.col(29,30,37,38,...this.stripe(49,54),72,73,76,94,95,96,126));
-        coords[17].push(...this.col(27,28,29,38,...this.stripe(49,53),...this.stripe(73,76),95,126));
-        coords[18].push(...this.col(26,27,38,48,49,74,75,76,125,126));
-        coords[19].push(...this.col(26,...this.stripe(38,44),48,74,...this.stripe(121,125)));
-        coords[20].push(...this.col(26,37,38,39,44,45,48,120,121));
-        coords[21].push(...this.col(26,36,37,38,45,48,...this.stripe(117,120)));
-        coords[22].push(...this.col(26,36,37,38,45,48,49,94,95,117));
-        coords[23].push(...this.col(26,27,...this.stripe(35,38),45,...this.stripe(49,53),94,95,117));
-        coords[24].push(...this.col(...this.stripe(27,35),38,39,44,45,53,54,62,63,73,74,...this.stripe(93,96),116,117));
+        coords[0].push(...this.col(46, 47, 65, 66, 73, 74, 80, 81, 92, 93, 100, 101, 107, 108, 119, 120));
+        coords[1].push(...this.col(...this.stripe(40, 46), ...this.stripe(66, 73), ...this.stripe(81, 87), 90, 91, 92, 101, 107, 120));
+        coords[2].push(...this.col(39, 40, ...this.stripe(87, 90), ...this.stripe(101, 107), 120, 121, 122));
+        coords[3].push(...this.col(37, 38, 39, 88, 89, 122, 123));
+        coords[4].push(...this.col(36, 37, 88, 89, 123, ...this.stripe(129, 134)));
+        coords[5].push(...this.col(36, 37, 88, 89, 123, 128, 129, 134, 135));
+        coords[6].push(...this.col(36, 87, 88, 89, 123, 128, 135));
+        coords[7].push(...this.col(36, 63, 69, ...this.stripe(83, 89), 122, 123, 128, 135));
+        coords[8].push(...this.col(36, 83, 89, 90, ...this.stripe(119, 122), 128, 135));
+        coords[9].push(...this.col(36, 62, 70, 82, 83, ...this.stripe(89, 92), 119, 128, 129, 134, 135));
+        coords[10].push(...this.col(36, ...this.stripe(58, 62), 70, 71, ...this.stripe(78, 92), 119, ...this.stripe(129, 134)));
+        coords[11].push(...this.col(36, 57, 58, 62, 70, 71, ...this.stripe(78, 83), ...this.stripe(89, 93), 102, 103, 108, 109, 118, 119));
+        coords[12].push(...this.col(36, 37, ...this.stripe(52, 58), 62, 63, ...this.stripe(69, 72), ...this.stripe(77, 82), ...this.stripe(90, 119)));
+        coords[13].push(...this.col(...this.stripe(37, 41), 52, ...this.stripe(58, 80), 92, 93, ...this.stripe(99, 125)));
+        coords[14].push(...this.col(37, 38, 41, 42, 51, 52, 58, 59, 65, 66, ...this.stripe(71, 79), 93, 99, 100, 125, 126));
+        coords[15].push(...this.col(...this.stripe(30, 38), ...this.stripe(41, 58), 72, 73, 76, 77, ...this.stripe(93, 99), 126));
+        coords[16].push(...this.col(29, 30, 37, 38, ...this.stripe(49, 54), 72, 73, 76, 94, 95, 96, 126));
+        coords[17].push(...this.col(27, 28, 29, 38, ...this.stripe(49, 53), ...this.stripe(73, 76), 95, 126));
+        coords[18].push(...this.col(26, 27, 38, 48, 49, 74, 75, 76, 125, 126));
+        coords[19].push(...this.col(26, ...this.stripe(38, 44), 48, 74, ...this.stripe(121, 125)));
+        coords[20].push(...this.col(26, 37, 38, 39, 44, 45, 48, 120, 121));
+        coords[21].push(...this.col(26, 36, 37, 38, 45, 48, ...this.stripe(117, 120)));
+        coords[22].push(...this.col(26, 36, 37, 38, 45, 48, 49, 94, 95, 117));
+        coords[23].push(...this.col(26, 27, ...this.stripe(35, 38), 45, ...this.stripe(49, 53), 94, 95, 117));
+        coords[24].push(...this.col(...this.stripe(27, 35), 38, 39, 44, 45, 53, 54, 62, 63, 73, 74, ...this.stripe(93, 96), 116, 117));
 
 
         this.createImages(coords, "textures", "ocean_center");
     }
-
 
 
     createGrassTiles() {
@@ -362,114 +452,120 @@ export default class MapScene extends Scene {
         const coords = this.getCoords();
 
         coords[5].push(...this.col(71));
-        coords[7].push(...this.col(94,104,110));
+        coords[7].push(...this.col(94, 104, 110));
         coords[8].push(...this.col(73));
         coords[11].push(...this.col(43));
         coords[20].push(...this.col(64, 97));
         coords[21].push(...this.col(55));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northeast_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_center", 2, -1);
     }
+
     createBeachCornerInnerNorthEastCornerSprites() {
         const coords = this.getCoords();
 
 
         coords[6].push(...this.col(70));
-        coords[8].push(...this.col(93,103,109));
+        coords[8].push(...this.col(93, 103, 109));
         coords[9].push(...this.col(72));
         coords[12].push(...this.col(42));
         coords[21].push(...this.col(63, 96));
         coords[22].push(...this.col(54));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northeast_corner", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_corner", 2, -1);
     }
+
     createBeachCornerInnerNorthEastSouthSprites() {
         const coords = this.getCoords();
 
         coords[6].push(...this.col(71));
-        coords[8].push(...this.col(94,104,110));
+        coords[8].push(...this.col(94, 104, 110));
         coords[9].push(...this.col(73));
         coords[12].push(...this.col(43));
         coords[21].push(...this.col(64, 97));
         coords[22].push(...this.col(55));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northeast_south", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_south", 2, -1);
     }
+
     createBeachCornerInnerNorthEastWestSprites() {
         const coords = this.getCoords();
 
         coords[5].push(...this.col(70));
-        coords[7].push(...this.col(93,103,109));
+        coords[7].push(...this.col(93, 103, 109));
         coords[8].push(...this.col(72));
         coords[11].push(...this.col(42))
         coords[20].push(...this.col(63, 96));
         coords[21].push(...this.col(54));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northeast_west", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northeast_west", 2, -1);
     }
 
     createBeachCornerInnerNorthWestCenterSprites() {
         const coords = this.getCoords();
 
-        coords[5].push(...this.col(61,81));
+        coords[5].push(...this.col(61, 81));
         coords[6].push(...this.col(117));
-        coords[7].push(...this.col(101,107));
-        coords[8].push(...this.col(56,76));
+        coords[7].push(...this.col(101, 107));
+        coords[8].push(...this.col(56, 76));
         coords[10].push(...this.col(50));
         coords[17].push(...this.col(119));
         coords[19].push(...this.col(34, 115));
         coords[20].push(...this.col(61, 92));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northwest_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_center", 2, -1);
     }
+
     createBeachCornerInnerNorthWestCornerSprites() {
         const coords = this.getCoords();
 
 
-        coords[6].push(...this.col(62,82));
+        coords[6].push(...this.col(62, 82));
         coords[7].push(...this.col(118));
-        coords[8].push(...this.col(102,108));
-        coords[9].push(...this.col(57,77));
+        coords[8].push(...this.col(102, 108));
+        coords[9].push(...this.col(57, 77));
         coords[11].push(...this.col(51));
         coords[18].push(...this.col(120));
         coords[20].push(...this.col(35, 116));
         coords[21].push(...this.col(62, 93));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northwest_corner", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_corner", 2, -1);
     }
+
     createBeachCornerInnerNorthWestSouthSprites() {
         const coords = this.getCoords();
 
-        coords[6].push(...this.col(61,81));
+        coords[6].push(...this.col(61, 81));
         coords[7].push(...this.col(117));
-        coords[8].push(...this.col(101,107));
-        coords[9].push(...this.col(56,76));
+        coords[8].push(...this.col(101, 107));
+        coords[9].push(...this.col(56, 76));
         coords[11].push(...this.col(50));
         coords[18].push(...this.col(119));
         coords[20].push(...this.col(34, 115));
         coords[21].push(...this.col(61, 92));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northwest_south", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_south", 2, -1);
     }
+
     createBeachCornerInnerNorthWestEastSprites() {
         const coords = this.getCoords();
 
-        coords[5].push(...this.col(62,82));
+        coords[5].push(...this.col(62, 82));
         coords[6].push(...this.col(118));
-        coords[7].push(...this.col(102,108));
-        coords[8].push(...this.col(57,77));
+        coords[7].push(...this.col(102, 108));
+        coords[8].push(...this.col(57, 77));
         coords[10].push(...this.col(51));
         coords[17].push(...this.col(120));
         coords[19].push(...this.col(116));
         coords[20].push(...this.col(62, 93));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_northwest_east", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_northwest_east", 2, -1);
     }
 
     createBeachCornerInnerSouthEastCenterSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(48,75,94));
+        coords[2].push(...this.col(48, 75, 94));
         coords[3].push(...this.col(109));
         coords[4].push(...this.col(41));
         coords[13].push(...this.col(84));
@@ -479,12 +575,13 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(31, 55, 97));
         coords[19].push(...this.col(78));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_southeast_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_southeast_center", 2, -1);
     }
+
     createBeachCornerInnerSouthEastWestSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(47,74,93));
+        coords[2].push(...this.col(47, 74, 93));
         coords[3].push(...this.col(108));
         coords[4].push(...this.col(40));
         coords[13].push(...this.col(83));
@@ -494,38 +591,39 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(30, 54, 96));
         coords[19].push(...this.col(77));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_southeast_west", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_southeast_west", 2, -1);
     }
 
     createBeachCornerInnerSouthWestCenterSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(64,79));
-        coords[3].push(...this.col(99,118));
+        coords[2].push(...this.col(64, 79));
+        coords[3].push(...this.col(99, 118));
         coords[13].push(...this.col(88));
         coords[16].push(...this.col(91));
         coords[17].push(...this.col(64, 70));
         coords[18].push(...this.col(93));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_southwest_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_southwest_center", 2, -1);
     }
+
     createBeachCornerInnerSouthWestEastSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(65,80));
-        coords[3].push(...this.col(100,119));
+        coords[2].push(...this.col(65, 80));
+        coords[3].push(...this.col(100, 119));
         coords[13].push(...this.col(89));
         coords[16].push(...this.col(92));
         coords[17].push(...this.col(65));
         coords[18].push(...this.col(94));
 
-        this.createSprites(coords, "textures", "beach_corner_inner_southwest_east", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_inner_southwest_east", 2, -1);
     }
 
     createBeachEdgeEastAFirstSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(99,118));
+        coords[2].push(...this.col(99, 118));
         coords[8].push(...this.col(117));
         coords[9].push(...this.col(68));
         coords[15].push(...this.col(91));
@@ -533,12 +631,13 @@ export default class MapScene extends Scene {
         coords[19].push(...this.col(72));
         coords[21].push(...this.col(72, 115));
 
-        this.createSprites(coords, "textures", "beach_edge_east_a_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_east_a_first", 2, -1);
     }
+
     createBeachEdgeEastASecondSprites() {
         const coords = this.getCoords();
 
-        coords[2].push(...this.col(100,119));
+        coords[2].push(...this.col(100, 119));
         coords[8].push(...this.col(118));
         coords[9].push(...this.col(69));
         coords[15].push(...this.col(92));
@@ -546,59 +645,62 @@ export default class MapScene extends Scene {
         coords[19].push(...this.col(73));
         coords[21].push(...this.col(73, 116));
 
-        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1);
     }
+
     createBeachEdgeEastBFirstSprites() {
         const coords = this.getCoords();
 
         coords[20].push(...this.col(72));
 
-        this.createSprites(coords, "textures", "beach_edge_east_b_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_east_b_first", 2, -1);
     }
+
     createBeachEdgeEastBSecondSprites() {
         const coords = this.getCoords();
 
         coords[20].push(...this.col(73));
 
-        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_east_a_second", 2, -1);
     }
 
     createBeachEdgeNorthASprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(50,52,54,56,58,60,62,77,96,111,113,115));
-        coords[2].push(...this.col(43,45,66,68,70,72,81,83));
-        coords[3].push(...this.col(101,103,105,107));
+        coords[0].push(...this.col(50, 52, 54, 56, 58, 60, 62, 77, 96, 111, 113, 115));
+        coords[2].push(...this.col(43, 45, 66, 68, 70, 72, 81, 83));
+        coords[3].push(...this.col(101, 103, 105, 107));
         coords[7].push(...this.col(66));
         coords[11].push(...this.col(86));
         coords[14].push(...this.col(62, 103, 105, 107, 109, 111, 113, 115, 117, 119, 121));
         coords[16].push(...this.col(33, 57, 99));
         coords[18].push(...this.col(52, 95));
 
-        this.createSprites(coords, "textures", "beach_edge_north_a", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_north_a", 2, -1);
     }
+
     createBeachEdgeNorthBSprites() {
         const coords = this.getCoords();
 
-        coords[0].push(...this.col(51,53,55,57,59,61,97,112,114,116));
-        coords[2].push(...this.col(44,46,67,69,71,73,82,84));
-        coords[3].push(...this.col(102,104,106));
+        coords[0].push(...this.col(51, 53, 55, 57, 59, 61, 97, 112, 114, 116));
+        coords[2].push(...this.col(44, 46, 67, 69, 71, 73, 82, 84));
+        coords[3].push(...this.col(102, 104, 106));
         coords[14].push(...this.col(104, 106, 108, 110, 112, 114, 116, 118, 120, 122));
         coords[16].push(...this.col(34, 58));
         coords[18].push(...this.col(53));
 
-        this.createSprites(coords, "textures", "beach_edge_north_b", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_north_b", 2, -1);
     }
 
     createBeachEdgeSouthAFirstSprites() {
         const coords = this.getCoords();
 
-        coords[5].push(...this.col(63,65,67,69,83));
+        coords[5].push(...this.col(63, 65, 67, 69, 83));
         coords[6].push(...this.col(119));
-        coords[8].push(...this.col(58,78));
-        coords[10].push(...this.col(52,54,96,98,112,114));
-        coords[11].push(...this.col(40,66));
-        coords[13].push(...this.col(45,47));
+        coords[8].push(...this.col(58, 78));
+        coords[10].push(...this.col(52, 54, 96, 98, 112, 114));
+        coords[11].push(...this.col(40, 66));
+        coords[13].push(...this.col(45, 47));
         coords[17].push(...this.col(121));
         coords[19].push(...this.col(117));
         coords[20].push(...this.col(94));
@@ -606,17 +708,18 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(30, 32));
         coords[23].push(...this.col(57, 59, 66, 68, 70, 77, 79, 81, 83, 85, 87, 89, 99, 101, 103, 105, 107, 109, 111, 113));
 
-        this.createSprites(coords, "textures", "beach_edge_south_a_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_south_a_first", 2, -1);
     }
+
     createBeachEdgeSouthASecondSprites() {
         const coords = this.getCoords();
 
-        coords[6].push(...this.col(63,65,67,69,83));
+        coords[6].push(...this.col(63, 65, 67, 69, 83));
         coords[7].push(...this.col(119));
-        coords[9].push(...this.col(58,78));
-        coords[11].push(...this.col(52,54,96,98,112,114));
-        coords[12].push(...this.col(40,66));
-        coords[14].push(...this.col(45,47));
+        coords[9].push(...this.col(58, 78));
+        coords[11].push(...this.col(52, 54, 96, 98, 112, 114));
+        coords[12].push(...this.col(40, 66));
+        coords[14].push(...this.col(45, 47));
         coords[18].push(...this.col(121));
         coords[20].push(...this.col(117));
         coords[21].push(...this.col(94));
@@ -624,40 +727,42 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(30, 32));
         coords[24].push(...this.col(57, 59, 66, 68, 70, 77, 79, 81, 83, 85, 87, 89, 99, 101, 103, 105, 107, 109, 111, 113));
 
-        this.createSprites(coords, "textures", "beach_edge_south_a_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_south_a_second", 2, -1);
     }
+
     createBeachEdgeSouthBFirstSprites() {
         const coords = this.getCoords();
 
 
-        coords[5].push(...this.col(64,66,68,84));
-        coords[8].push(...this.col(59,79));
-        coords[10].push(...this.col(53,97,99,113,115));
+        coords[5].push(...this.col(64, 66, 68, 84));
+        coords[8].push(...this.col(59, 79));
+        coords[10].push(...this.col(53, 97, 99, 113, 115));
         coords[11].push(...this.col(41));
-        coords[13].push(...this.col(46,48));
+        coords[13].push(...this.col(46, 48));
         coords[17].push(...this.col(122));
         coords[20].push(...this.col(95));
         coords[21].push(...this.col(53));
         coords[22].push(...this.col(31));
         coords[23].push(...this.col(58, 67, 69, 78, 80, 82, 84, 86, 88, 90, 100, 102, 104, 106, 108, 110, 112));
 
-        this.createSprites(coords, "textures", "beach_edge_south_b_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_south_b_first", 2, -1);
     }
+
     createBeachEdgeSouthBSecondSprites() {
         const coords = this.getCoords();
 
-        coords[6].push(...this.col(64,66,68,84));
-        coords[9].push(...this.col(59,79));
-        coords[11].push(...this.col(53,97,99,113,115));
+        coords[6].push(...this.col(64, 66, 68, 84));
+        coords[9].push(...this.col(59, 79));
+        coords[11].push(...this.col(53, 97, 99, 113, 115));
         coords[12].push(...this.col(41));
-        coords[14].push(...this.col(46,48));
+        coords[14].push(...this.col(46, 48));
         coords[18].push(...this.col(122));
         coords[21].push(...this.col(95));
         coords[22].push(...this.col(53));
         coords[23].push(...this.col(31));
         coords[24].push(...this.col(58, 67, 69, 78, 80, 82, 84, 86, 88, 90, 100, 102, 104, 106, 108, 110, 112));
 
-        this.createSprites(coords, "textures", "beach_edge_south_b_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_south_b_second", 2, -1);
     }
 
     createBeachEdgeWestAFirstSprites() {
@@ -673,8 +778,9 @@ export default class MapScene extends Scene {
         coords[20].push(...this.col(28));
         coords[21].push(...this.col(75));
 
-        this.createSprites(coords, "textures", "beach_edge_west_a_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_west_a_first", 2, -1);
     }
+
     createBeachEdgeWestASecondSprites() {
         const coords = this.getCoords();
 
@@ -688,11 +794,11 @@ export default class MapScene extends Scene {
         coords[20].push(...this.col(27));
         coords[21].push(...this.col(74));
 
-        this.createSprites(coords, "textures", "beach_edge_west_a_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_west_a_second", 2, -1);
     }
+
     createBeachEdgeWestBFirstSprites() {
         const coords = this.getCoords();
-
 
 
         coords[5].push(...this.col(91));
@@ -701,8 +807,9 @@ export default class MapScene extends Scene {
 
         coords[17].push(...this.col(78));
 
-        this.createSprites(coords, "textures", "beach_edge_west_b_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_west_b_first", 2, -1);
     }
+
     createBeachEdgeWestBSecondSprites() {
         const coords = this.getCoords();
 
@@ -711,7 +818,7 @@ export default class MapScene extends Scene {
         coords[9].push(...this.col(37));
         coords[17].push(...this.col(77));
 
-        this.createSprites(coords, "textures", "beach_edge_west_b_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_edge_west_b_second", 2, -1);
     }
 
     createBeachCornerNorthEastEdgeNorthSprites() {
@@ -729,8 +836,9 @@ export default class MapScene extends Scene {
         coords[17].push(...this.col(71));
         coords[20].push(...this.col(42));
 
-        this.createSprites(coords, "textures", "beach_corner_northeast_edge_north", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northeast_edge_north", 2, -1);
     }
+
     createBeachCornerNorthEastCenterSprites() {
         const coords = this.getCoords();
 
@@ -746,8 +854,9 @@ export default class MapScene extends Scene {
         coords[17].push(...this.col(72));
         coords[20].push(...this.col(43));
 
-        this.createSprites(coords, "textures", "beach_corner_northeast_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northeast_center", 2, -1);
     }
+
     createBeachCornerNorthEastEdgeEastFirstSprites() {
         const coords = this.getCoords();
 
@@ -763,8 +872,9 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(72));
         coords[21].push(...this.col(43));
 
-        this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_first", 2, -1);
     }
+
     createBeachCornerNorthEastEdgeEastSecondSprites() {
         const coords = this.getCoords();
 
@@ -780,7 +890,7 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(73));
         coords[21].push(...this.col(44));
 
-        this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northeast_edge_east_second", 2, -1);
     }
 
     createBeachCornerNorthWestEdgeNorthSprites() {
@@ -800,8 +910,9 @@ export default class MapScene extends Scene {
         coords[19].push(...this.col(76));
         coords[20].push(...this.col(41));
 
-        this.createSprites(coords, "textures", "beach_corner_northwest_edge_north", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northwest_edge_north", 2, -1);
     }
+
     createBeachCornerNorthWestCenterSprites() {
         const coords = this.getCoords();
 
@@ -819,8 +930,9 @@ export default class MapScene extends Scene {
         coords[19].push(...this.col(75));
         coords[20].push(...this.col(40));
 
-        this.createSprites(coords, "textures", "beach_corner_northwest_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northwest_center", 2, -1);
     }
+
     createBeachCornerNorthWestEdgeWestFirstSprites() {
         const coords = this.getCoords();
 
@@ -838,8 +950,9 @@ export default class MapScene extends Scene {
         coords[20].push(...this.col(75));
         coords[21].push(...this.col(40));
 
-        this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_first", 2, -1);
     }
+
     createBeachCornerNorthWestEdgeWestSecondSprites() {
         const coords = this.getCoords();
 
@@ -857,7 +970,7 @@ export default class MapScene extends Scene {
         coords[20].push(...this.col(74));
         coords[21].push(...this.col(39));
 
-        this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_northwest_edge_west_second", 2, -1);
     }
 
     createBeachCornerSouthEastEdgeEastFirstSprites() {
@@ -874,8 +987,9 @@ export default class MapScene extends Scene {
         coords[21].push(...this.col(34));
         coords[22].push(...this.col(43, 61, 72, 92, 115));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_first", 2, -1);
     }
+
     createBeachCornerSouthEastEdgeEastSecondSprites() {
         const coords = this.getCoords();
 
@@ -890,8 +1004,9 @@ export default class MapScene extends Scene {
         coords[21].push(...this.col(35));
         coords[22].push(...this.col(44, 62, 73, 93, 116));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_edge_east_second", 2, -1);
     }
+
     createBeachCornerSouthEastEdgeSouthFirstSprites() {
         const coords = this.getCoords();
 
@@ -906,8 +1021,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(33));
         coords[23].push(...this.col(42, 60, 71, 91, 114));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_first", 2, -1);
     }
+
     createBeachCornerSouthEastCenterSprites() {
         const coords = this.getCoords();
 
@@ -922,8 +1038,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(34));
         coords[23].push(...this.col(43, 61, 72, 92, 115));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_center", 2, -1);
     }
+
     createBeachCornerSouthEastEastSprites() {
         const coords = this.getCoords();
 
@@ -938,8 +1055,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(35));
         coords[23].push(...this.col(44, 62, 73, 93, 116));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_east", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_east", 2, -1);
     }
+
     createBeachCornerSouthEastEdgeSouthSecondSprites() {
         const coords = this.getCoords();
 
@@ -954,8 +1072,9 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(33));
         coords[24].push(...this.col(42, 60, 71, 91, 114));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_edge_south_second", 2, -1);
     }
+
     createBeachCornerSouthEastSouthSprites() {
         const coords = this.getCoords();
 
@@ -970,7 +1089,7 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(34));
         coords[24].push(...this.col(43, 61, 72, 92, 115));
 
-        this.createSprites(coords, "textures", "beach_corner_southeast_south", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southeast_south", 2, -1);
     }
 
     createBeachCornerSouthWestEdgeWestFirstSprites() {
@@ -984,8 +1103,9 @@ export default class MapScene extends Scene {
         coords[21].push(...this.col(28));
         coords[22].push(...this.col(40, 64, 75, 97));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_first", 2, -1);
     }
+
     createBeachCornerSouthWestEdgeWestSecondSprites() {
         const coords = this.getCoords();
 
@@ -997,8 +1117,9 @@ export default class MapScene extends Scene {
         coords[21].push(...this.col(27));
         coords[22].push(...this.col(39, 63, 74, 96));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_edge_west_second", 2, -1);
     }
+
     createBeachCornerSouthWestEdgeSouthFirstSprites() {
         const coords = this.getCoords();
 
@@ -1011,8 +1132,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(29));
         coords[23].push(...this.col(41, 56, 65, 76, 98));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_first", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_first", 2, -1);
     }
+
     createBeachCornerSouthWestCenterSprites() {
         const coords = this.getCoords();
 
@@ -1025,8 +1147,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(28));
         coords[23].push(...this.col(40, 55, 64, 75, 97));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_center", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_center", 2, -1);
     }
+
     createBeachCornerSouthWestWestSprites() {
         const coords = this.getCoords();
 
@@ -1039,8 +1162,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(27));
         coords[23].push(...this.col(39, 54, 63, 74, 96));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_west", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_west", 2, -1);
     }
+
     createBeachCornerSouthWestEdgeSouthSecondSprites() {
         const coords = this.getCoords();
 
@@ -1053,13 +1177,14 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(29));
         coords[24].push(...this.col(41, 56, 65, 76, 98));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_second", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_edge_south_second", 2, -1);
     }
+
     createBeachCornerSouthWestSouthSprites() {
         const coords = this.getCoords();
 
         coords[8].push(...this.col(91));
-        coords[9].push(...this.col(71,130));
+        coords[9].push(...this.col(71, 130));
         coords[11].push(...this.col(94, 104, 110));
         coords[12].push(...this.col(38, 64, 73));
         coords[14].push(...this.col(43));
@@ -1067,7 +1192,7 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(28));
         coords[24].push(...this.col(40, 55, 64, 75, 97));
 
-        this.createSprites(coords, "textures", "beach_corner_southwest_south", 2, -1, true);
+        this.createSprites(coords, "textures", "beach_corner_southwest_south", 2, -1);
     }
 
     createGrassCenterImages() {
@@ -1113,6 +1238,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_corner_northeast");
     }
+
     createGrassCornerNorthWestImages() {
         const coords = this.getCoords();
 
@@ -1132,6 +1258,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_corner_northwest");
     }
+
     createGrassCornerSouthEastImages() {
         const coords = this.getCoords();
 
@@ -1148,6 +1275,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_corner_southeast");
     }
+
     createGrassCornerSouthWestImages() {
         const coords = this.getCoords();
 
@@ -1183,6 +1311,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_east_a");
     }
+
     createGrassEdgeEastBImages() {
         const coords = this.getCoords();
 
@@ -1199,6 +1328,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_east_b");
     }
+
     createGrassEdgeNorthAImages() {
         const coords = this.getCoords();
 
@@ -1219,6 +1349,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_north_a");
     }
+
     createGrassEdgeNorthBImages() {
         const coords = this.getCoords();
 
@@ -1237,6 +1368,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_north_b");
     }
+
     createGrassEdgeSouthAImages() {
         const coords = this.getCoords();
 
@@ -1258,6 +1390,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_south_a");
     }
+
     createGrassEdgeSouthBImages() {
         const coords = this.getCoords();
 
@@ -1278,6 +1411,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_south_b");
     }
+
     createGrassEdgeWestAImages() {
         const coords = this.getCoords();
 
@@ -1299,6 +1433,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "grass_edge_west_a");
     }
+
     createGrassEdgeWestBImages() {
         const coords = this.getCoords();
 
@@ -1347,6 +1482,7 @@ export default class MapScene extends Scene {
 
         this.createImages(coords, "textures", "deep_ocean_center");
     }
+
     createDeepOceanCornerInnerNorthEastSprites() {
         const coords = this.getCoords();
 
@@ -1360,8 +1496,9 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(45));
         coords[19].push(...this.col(46));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_inner_northeast", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_inner_northeast", 2, -1);
     }
+
     createDeepOceanCornerInnerNorthWestSprites() {
         const coords = this.getCoords();
 
@@ -1375,8 +1512,9 @@ export default class MapScene extends Scene {
         coords[16].push(...this.col(26));
         coords[17].push(...this.col(25, 47));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_inner_northwest", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_inner_northwest", 2, -1);
     }
+
     createDeepOceanCornerInnerSouthEastSprites() {
         const coords = this.getCoords();
 
@@ -1389,8 +1527,9 @@ export default class MapScene extends Scene {
         coords[21].push(...this.col(122));
         coords[22].push(...this.col(121));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_inner_southeast", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_inner_southeast", 2, -1);
     }
+
     createDeepOceanCornerInnerSouthWestSprites() {
         const coords = this.getCoords();
 
@@ -1400,8 +1539,9 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(47));
         coords[24].push(...this.col(25, 48));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_inner_southwest", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_inner_southwest", 2, -1);
     }
+
     createDeepOceanCornerNorthEastSprites() {
         const coords = this.getCoords();
 
@@ -1415,8 +1555,9 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(48));
         coords[24].push(...this.col(26, 37, 52));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_northeast", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_northeast", 2, -1);
     }
+
     createDeepOceanCornerNorthWestSprites() {
         const coords = this.getCoords();
 
@@ -1433,8 +1574,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(118));
         coords[24].push(...this.col(36));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_northwest", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_northwest", 2, -1);
     }
+
     createDeepOceanCornerSouthEastSprites() {
         const coords = this.getCoords();
 
@@ -1450,8 +1592,9 @@ export default class MapScene extends Scene {
         coords[16].push(...this.col(28, 75));
         coords[17].push(...this.col(26, 48));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_southeast", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_southeast", 2, -1);
     }
+
     createDeepOceanCornerSouthWestSprites() {
         const coords = this.getCoords();
 
@@ -1467,8 +1610,9 @@ export default class MapScene extends Scene {
         coords[18].push(...this.col(39));
         coords[19].push(...this.col(45));
 
-        this.createSprites(coords, "textures", "deep_ocean_corner_southwest", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_corner_southwest", 2, -1);
     }
+
     createDeepOceanEdgeEastSprites() {
         const coords = this.getCoords();
 
@@ -1490,8 +1634,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(25, 47));
         coords[23].push(...this.col(25));
 
-        this.createSprites(coords, "textures", "deep_ocean_edge_east", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_edge_east", 2, -1);
     }
+
     createDeepOceanEdgeNorthSprites() {
         const coords = this.getCoords();
 
@@ -1504,8 +1649,9 @@ export default class MapScene extends Scene {
         coords[22].push(...this.col(119, 120));
         coords[24].push(...this.col(49, 50, 51));
 
-        this.createSprites(coords, "textures", "deep_ocean_edge_north", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_edge_north", 2, -1);
     }
+
     createDeepOceanEdgeSouthSprites() {
         const coords = this.getCoords();
 
@@ -1519,8 +1665,9 @@ export default class MapScene extends Scene {
         coords[16].push(...this.col(27));
         coords[18].push(...this.col(40, 41, 42, 43, 44));
 
-        this.createSprites(coords, "textures", "deep_ocean_edge_south", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_edge_south", 2, -1);
     }
+
     createDeepOceanEdgeWestSprites() {
         const coords = this.getCoords();
 
@@ -1545,7 +1692,7 @@ export default class MapScene extends Scene {
         coords[23].push(...this.col(46, 118));
         coords[24].push(...this.col(46, 118));
 
-        this.createSprites(coords, "textures", "deep_ocean_edge_west", 2, -1, true);
+        this.createSprites(coords, "textures", "deep_ocean_edge_west", 2, -1);
     }
 
 
@@ -1553,14 +1700,14 @@ export default class MapScene extends Scene {
         const coords = new Array(25);
 
         for (let i = 0; i < coords.length; i++) {
-            coords[i] = new Array();
+            coords[i] = [];
         }
 
         return coords;
     }
 
     stripe(initial, end) {
-        let numbers = new Array();
+        let numbers = [];
         for (let i = initial; i <= end; i++) {
             numbers.push(i);
         }
@@ -1575,17 +1722,32 @@ export default class MapScene extends Scene {
     createImages(coords, texture, frame) {
         coords.forEach((row, y) => {
             row.forEach(x => {
-                this.add.image(x, this.col(y)[0], texture, frame)
+                this.add.image(x, Number(this.col(y)[0]), texture, frame)
             })
         })
     }
 
-    createSprites(coords, texture, frame, frameRate, repeat, playAnimation) {
+    createSprites(coords, texture, frame, frameRate, repeat) {
+        let config = {
+            key: `${frame}_f1`,
+            frames: [
+                {key: texture, frame: `${frame}_f1`},
+                {key: texture, frame: `${frame}_f2`},
+                {key: texture, frame: `${frame}_f3`},
+                {key: texture, frame: `${frame}_f2`},
+            ],
+            frameRate: frameRate,
+            repeat: repeat
+        }
+
+        this.anims.create(config);
+
         coords.forEach((row, y) => {
             row.forEach(x => {
-                new Sprite(this, x, this.col(y)[0], texture, frame, frameRate, repeat, playAnimation);
+                this.add.sprite(x, Number(this.col(y)[0]), texture, `${frame}_f1`).play(`${frame}_f1`);
             })
         })
+
     }
 
     createWalls() {
@@ -1593,9 +1755,6 @@ export default class MapScene extends Scene {
         this.beaches = this.physics.add.staticGroup();
         this.grass = this.physics.add.staticGroup();
         this.wallPositions = [];
-
-        const MAX_X = this.maxPositionX;
-        const MAX_Y = this.maxPositionY;
 
         // //100% grass center
         //
@@ -1639,6 +1798,7 @@ export default class MapScene extends Scene {
                     inactive.setActive(true);
                 }
             });
+        this.cameras.main.zoomTo(2,2000)
         this.emit("link", link.name);
         link.setActive(false);
     }

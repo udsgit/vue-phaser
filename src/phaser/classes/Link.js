@@ -8,4 +8,6 @@ export default class Link extends Physics.Arcade.Image {
         this.scene.physics.world.enable(this);
         this.scene.add.existing(this);
     }
+
+
 }
