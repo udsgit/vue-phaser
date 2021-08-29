@@ -1,3 +1,3 @@
-# personal-page-phaser
+# vue-phaser
 
 Wip: In development... 
